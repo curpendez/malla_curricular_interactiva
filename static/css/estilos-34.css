@@ -1,0 +1,66 @@
+
+body#raAppTheme.ra-theme-v2 :is(.btn,.customizer-mini-btn,.profile-edit-button){border-radius:14px!important;min-height:42px;padding:10px 15px!important;font-weight:750!important;line-height:1.25!important;border:1px solid var(--ra-border)!important;box-shadow:0 3px 0 #00000007,0 6px 15px #00000006!important;transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease!important}
+body#raAppTheme.ra-theme-v2 .btn.primary,body#raAppTheme.ra-theme-v2 .profile-edit-button{background:linear-gradient(135deg,var(--ra-accent),color-mix(in srgb,var(--ra-accent) 82%,var(--ra-card)))!important;border-color:color-mix(in srgb,var(--ra-accent) 75%,var(--ra-border))!important}
+body#raAppTheme.ra-theme-v2 .btn.ghost{background:var(--ra-card)!important}
+body#raAppTheme.ra-theme-v2 :is(.btn,.customizer-mini-btn,.profile-edit-button):hover{transform:translateY(-2px)!important;border-color:var(--ra-accent)!important;box-shadow:0 5px 0 #00000006,0 10px 22px #0000000c!important}
+body#raAppTheme.ra-theme-v2 :is(.btn,.customizer-mini-btn,.profile-edit-button):active{transform:translateY(0)!important;box-shadow:0 1px 3px #0000000c!important}
+body#raAppTheme.ra-theme-v2.accessible-mode .btn{min-height:52px!important;font-size:16px!important}
+body#raAppTheme.ra-theme-v2 .ra-home-hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(285px,.85fr);gap:30px;align-items:center;padding:34px;border-radius:26px;border:1px solid var(--ra-border);background:var(--ra-home)!important;box-shadow:0 10px 28px #00000005;margin-bottom:20px;overflow:hidden;position:relative}
+.ra-home-copy{position:relative;z-index:1;min-width:0}
+.ra-home-kicker{display:flex;align-items:center;gap:7px;font-size:9px;font-weight:850;letter-spacing:.15em;line-height:1.5}
+.ra-home-copy h2{font-size:clamp(29px,3.4vw,46px);line-height:1.1;letter-spacing:-.045em;margin:19px 0 16px;font-weight:850;max-width:690px}
+.ra-home-copy>p{font-size:13px;line-height:1.85;max-width:490px}
+.ra-home-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}
+body#raAppTheme.ra-theme-v2 .ra-home-actions .btn{min-height:48px;padding:11px 17px!important;gap:10px!important;font-size:12px!important;display:inline-flex;align-items:center}
+.ra-home-actions .ic{width:17px;height:17px}
+.ra-btn-icon{display:grid;place-items:center;width:27px;height:27px;border-radius:8px;background:#ffffff40}
+.ra-home-footnote{display:flex;align-items:center;gap:7px;font-size:9px;line-height:1.6;margin-top:20px}
+.ra-home-footnote>span{width:5px;height:5px;border-radius:50%;background:var(--ra-progress-bar);flex:none}
+body#raAppTheme.ra-theme-v2 .ra-home-summary{background:var(--ra-home-card)!important;border:1px solid var(--ra-border);border-radius:22px;padding:23px;box-shadow:0 14px 32px #00000009;min-width:0}
+.ra-home-summary>header{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.ra-home-status{display:flex;align-items:center;gap:5px;background:var(--ra-home-detail);padding:5px 8px;border:1px solid var(--ra-border);border-radius:99px;font-size:8px;font-weight:700;white-space:nowrap}
+.ra-home-status i{width:5px;height:5px;border-radius:50%;background:var(--ra-progress-bar)}
+.ra-home-percentage{display:flex;gap:15px;align-items:center;justify-content:space-between;margin:24px 0 15px}
+.ra-home-percentage>strong{font-size:65px;line-height:1;letter-spacing:-.065em;font-weight:850}
+.ra-home-percentage>strong>span{font-size:30px;letter-spacing:-.04em;margin-left:3px}
+.ra-home-percentage>p{font-size:11px;line-height:1.6}
+.ra-home-progress{height:8px;border-radius:99px;overflow:hidden;background:var(--ra-track)}
+.ra-home-progress>i{display:block;height:100%;border-radius:99px;background:var(--ra-progress-bar)}
+.ra-home-progress-caption{font-size:10px;line-height:1.6;margin-top:9px}
+.ra-home-mini-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:22px 0 17px}
+.ra-home-mini-grid>div{display:flex;flex-direction:column;gap:5px;padding:13px 10px;border-radius:13px;background:var(--ra-home-detail);border:1px solid var(--ra-border)}
+.ra-home-mini-grid b{font-size:22px;letter-spacing:-.03em;line-height:1.1}.ra-home-mini-grid span{font-size:9px}
+.ra-home-summary-link{width:100%;display:flex;justify-content:space-between;gap:10px;align-items:center;padding:5px 0;font-size:10px;font-weight:750}
+.ra-home-summary-link .ic{width:15px;height:15px}
+body#raAppTheme.ra-theme-v2 .home-quick-actions>button{background:var(--ra-card)!important;border:1px solid var(--ra-border)!important;border-radius:17px!important;box-shadow:0 3px 0 #00000004!important;padding:16px!important;transition:transform .16s ease,box-shadow .16s ease}
+body#raAppTheme.ra-theme-v2 .home-quick-actions>button:hover{transform:translateY(-3px);box-shadow:0 10px 23px #0000000b!important;border-color:var(--ra-accent)!important}
+body#raAppTheme.ra-theme-v2 .home-quick-actions .hq-icon{background:var(--ra-soft)!important;border-radius:12px!important}
+body#raAppTheme.ra-theme-v2 .ra-cycle-intro{background:var(--ra-progress);border:1px solid var(--ra-border);padding:27px;border-radius:24px;margin-bottom:22px}
+.ra-cycle-intro>h2{font-size:29px;line-height:1.2;letter-spacing:-.035em;margin:10px 0 7px;font-weight:800}
+.ra-cycle-intro>p{font-size:12px}
+.ra-cycle-options{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:23px}
+body#raAppTheme.ra-theme-v2 .ra-cycle-option{display:flex;align-items:center;gap:13px;padding:18px;border:1.5px solid var(--ra-border);border-radius:17px;background:var(--ra-card);text-align:left;box-shadow:0 4px 0 #00000005;transition:transform .16s,border-color .16s,box-shadow .16s;min-width:0}
+body#raAppTheme.ra-theme-v2 .ra-cycle-option:hover{border-color:var(--ra-accent);transform:translateY(-2px);box-shadow:0 8px 20px #0000000b}
+body#raAppTheme.ra-theme-v2 .ra-cycle-option.is-selected{border-color:var(--ra-progress-bar);background:var(--ra-soft);box-shadow:0 0 0 2px color-mix(in srgb,var(--ra-progress-bar) 30%,transparent)}
+.ra-cycle-icon{display:grid;place-items:center;width:43px;height:43px;flex:none;border-radius:13px;background:var(--ra-soft)}
+.ra-cycle-copy{display:flex;flex:1;min-width:0;flex-direction:column;gap:6px}.ra-cycle-copy>b{font-size:16px;line-height:1.25}.ra-cycle-copy>small{font-size:11px;letter-spacing:.055em}
+.ra-cycle-mark{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--ra-soft);flex:none}.ra-cycle-mark .ic{width:15px;height:15px}
+.ra-cycle-option.is-selected .ra-cycle-mark{background:var(--ra-accent)}
+.ra-cycle-prompt{display:flex;align-items:center;justify-content:center;gap:14px;padding:30px;border:1px dashed var(--ra-border);border-radius:20px;background:var(--ra-card);font-size:13px;line-height:1.75}
+.ra-cycle-prompt>.ic{width:28px;height:28px}.ra-cycle-prompt>p{max-width:600px}
+.ra-cycle-results-head{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin:5px 0 18px}
+.ra-cycle-results-head h3{font-size:19px;letter-spacing:-.025em;margin-bottom:7px}.ra-cycle-results-head p{font-size:12px;line-height:1.7;max-width:650px}
+.ra-cycle-count{padding:8px 12px;border-radius:99px;white-space:nowrap;background:var(--ra-soft);border:1px solid var(--ra-border);font-size:10px;font-weight:750}
+.ra-cycle-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+.ra-cycle-group{border:1px solid var(--ra-border);background:var(--ra-card);border-radius:21px;overflow:hidden}
+.ra-cycle-group>header{display:flex;gap:11px;align-items:center;padding:19px;border-bottom:1px solid var(--ra-border);background:var(--ra-soft)}
+.ra-cycle-sem-number{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:var(--ra-card);font-size:18px;font-weight:800}
+.ra-cycle-group h4{font-size:15px;letter-spacing:-.015em;margin:0 0 3px}.ra-cycle-group header p{font-size:10px}
+.ra-cycle-course{display:flex;gap:10px;align-items:center;width:100%;text-align:left;padding:16px 18px;border-bottom:1px solid var(--ra-border);background:var(--ra-card);transition:background .15s}
+.ra-cycle-course:last-child{border:0}.ra-cycle-course:hover{background:var(--ra-soft)}
+.ra-cycle-course-icon{display:grid;place-items:center;width:30px;height:34px;flex:none;border-radius:9px;background:var(--ra-soft)}.ra-cycle-course-icon .ic{width:15px}
+.ra-cycle-course-main{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}.ra-cycle-course-main>b{font-size:12.5px;line-height:1.5}.ra-cycle-course-main>span{display:flex;flex-wrap:wrap;gap:5px;font-size:9px;line-height:1.5}.ra-cycle-course-main i{font-style:normal}.ra-cycle-course-arrow .ic{width:15px}
+@media(max-width:1150px){body#raAppTheme.ra-theme-v2 .ra-home-hero{grid-template-columns:1fr;gap:25px}.ra-home-summary{width:100%}.ra-home-summary>header{justify-content:flex-start}.ra-home-percentage{justify-content:flex-start;gap:25px}.ra-home-mini-grid{margin-top:15px}.ra-home-copy>p{max-width:650px}}
+@media(max-width:700px){body#raAppTheme.ra-theme-v2 .ra-home-hero{padding:23px 19px;border-radius:21px;gap:23px}.ra-home-copy h2{font-size:32px;margin-top:16px}.ra-home-copy>p{font-size:12px;line-height:1.8}.ra-home-actions{gap:9px;margin-top:20px}.ra-home-actions .btn{flex:1;justify-content:center;white-space:normal}.ra-home-summary{padding:19px!important}.ra-home-percentage strong{font-size:55px}.ra-home-mini-grid b{font-size:21px}.ra-cycle-intro{padding:22px 17px!important}.ra-cycle-intro>h2{font-size:25px}.ra-cycle-options{gap:10px}.ra-cycle-option{padding:14px 11px!important;gap:9px!important;flex-wrap:wrap}.ra-cycle-icon{width:34px;height:34px;border-radius:10px}.ra-cycle-copy>b{font-size:14px}.ra-cycle-copy>small{font-size:10px;letter-spacing:0}.ra-cycle-mark{width:23px;height:23px}.ra-cycle-groups{grid-template-columns:1fr}.ra-cycle-results-head{flex-direction:column;gap:12px}.ra-cycle-prompt{padding:23px 17px;font-size:12px}}
+@media(max-width:430px){.ra-cycle-icon{display:none}.ra-cycle-option{gap:7px!important}.ra-home-actions{flex-direction:column}.ra-home-actions .btn{width:100%}.ra-home-footnote{font-size:8px}}
+@media(prefers-reduced-motion:reduce){body#raAppTheme.ra-theme-v2 :is(.btn,.customizer-mini-btn,.profile-edit-button,.ra-cycle-option,.home-quick-actions>button){transition:none!important;transform:none!important}}

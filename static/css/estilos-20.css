@@ -1,0 +1,103 @@
+
+/* MASTER TOKENS: apply consistently across UAM dark surfaces */
+body.dark-theme-active{
+ --ra-page:#080f1c;--ra-pane:#111e30;--ra-pane-2:#192a3f;--ra-control:#15263b;
+ --ra-text:#f5f8ff;--ra-muted:#c1cee1;--ra-outline:#344a65;--ra-cyan:#63dff0;
+ background:var(--ra-page)!important;color:var(--ra-text)!important;
+}
+body.dark-theme-active .app,body.dark-theme-active main{background:var(--ra-page)!important}
+body.dark-theme-active .topbar{background:#0c1728!important}
+body.dark-theme-active .topbar h1,body.dark-theme-active h2:not(.hero h2),body.dark-theme-active .section-heading h3,body.dark-theme-active .panel-head h3,body.dark-theme-active .dash-mini h4{color:var(--ra-text)!important}
+body.dark-theme-active .topbar p,body.dark-theme-active .panel-head p,body.dark-theme-active .muted-p,body.dark-theme-active .section-heading p,body.dark-theme-active .c-hint{color:var(--ra-muted)!important}
+body.dark-theme-active .panel:not(.highlight),body.dark-theme-active .modal-card,body.dark-theme-active .modal-card .m-body,body.dark-theme-active .kpi:not(.dark),body.dark-theme-active .slot,body.dark-theme-active .sem,body.dark-theme-active .curriculum-sem,body.dark-theme-active .dash-mini,body.dark-theme-active .study-shell,body.dark-theme-active .study-panel,body.dark-theme-active .note:not(.dark),body.dark-theme-active .req-row,body.dark-theme-active .req-map-panel,body.dark-theme-active .req-map-sem,body.dark-theme-active .req-map-node,body.dark-theme-active .grad-stat,body.dark-theme-active .curriculum-metrics>*,body.dark-theme-active .semester-primary-action,body.dark-theme-active .grade-semester,body.dark-theme-active .grade-semester-head,body.dark-theme-active .global-search-results,body.dark-theme-active .customizer-section,body.dark-theme-active .customizer-modal,body.dark-theme-active .agenda-shell>*,body.dark-theme-active .agenda-task,body.dark-theme-active .dash-task{background:var(--ra-pane)!important;border-color:var(--ra-outline)!important;color:var(--ra-text)!important}
+body.dark-theme-active .m-foot,body.dark-theme-active .table-wrap,body.dark-theme-active .table td,body.dark-theme-active .slot-stats>div,body.dark-theme-active .req-row .req-col,body.dark-theme-active .detail-grid>div,body.dark-theme-active .req-map-focus,body.dark-theme-active .calendar-day{background:var(--ra-pane-2)!important;border-color:var(--ra-outline)!important;color:var(--ra-text)!important}
+body.dark-theme-active .course.st-available,body.dark-theme-active .course.st-blocked{background:var(--ra-pane)!important;border-color:var(--ra-outline)!important;color:var(--ra-text)!important}
+body.dark-theme-active .course.st-blocked{background:var(--ra-pane-2)!important}
+body.dark-theme-active .course.st-taken{background:linear-gradient(125deg,#123564,#0b264a)!important;color:#fff!important}
+body.dark-theme-active .c-name,body.dark-theme-active .code:not(.course.st-taken .code),body.dark-theme-active .section-heading h3,body.dark-theme-active .curriculum-sem-head h3,body.dark-theme-active .grade-semester-title h4,body.dark-theme-active .sched-stat b,body.dark-theme-active .req-row b,body.dark-theme-active .panel b,body.dark-theme-active .panel h4,body.dark-theme-active .dash-mini-head h4,body.dark-theme-active .kpi:not(.dark) b{color:var(--ra-text)!important}
+body.dark-theme-active .curriculum-course .code{color:#a9d6ff!important}
+body.dark-theme-active .btn.ghost,body.dark-theme-active .quick-tool,body.dark-theme-active .global-search-btn,body.dark-theme-active .seg,body.dark-theme-active .filter,body.dark-theme-active .search,body.dark-theme-active .grade-input,body.dark-theme-active input:not([type=checkbox]):not([type=radio]),body.dark-theme-active select,body.dark-theme-active textarea,body.dark-theme-active .form input,body.dark-theme-active .form select,body.dark-theme-active .form textarea{background:var(--ra-control)!important;border-color:var(--ra-outline)!important;color:var(--ra-text)!important}
+body.dark-theme-active input::placeholder,body.dark-theme-active textarea::placeholder{color:#adbed3!important;opacity:1}
+body.dark-theme-active .filter.on,body.dark-theme-active .seg button.on{background:#1c5686!important;color:#fff!important}
+body.dark-theme-active .note:not(.dark) .ic,body.dark-theme-active .req-row small,body.dark-theme-active .c-req,body.dark-theme-active .c-hint,body.dark-theme-active .detail-grid label,body.dark-theme-active .curriculum-sem-head small{color:var(--ra-muted)!important}
+body.dark-theme-active .table th{background:#1b344f!important;color:#f1f8ff!important}
+body.dark-theme-active .table tbody tr:hover td{background:#243953!important}
+body.dark-theme-active :is(.code,.mini,.tag):not(.course.st-taken .code){border-color:var(--ra-outline)}
+body.dark-theme-active button:focus-visible,body.dark-theme-active :is(input,select,textarea):focus-visible{outline:3px solid var(--route-legacy-line, #5fe1f2)!important;outline-offset:2px!important}
+/* Sidebar — clear navigation both expanded and compact */
+.sidebar{border-right:1px solid rgba(76,177,221,.19)!important}
+.uam-compact-mark{display:none;place-items:center;font-weight:1000;font-size:22px;letter-spacing:-.06em;width:46px;height:46px;background:linear-gradient(135deg,#0e77ab,#073968);color:#fff;border:1px solid var(--route-legacy-line, rgba(101,229,242,.45));border-radius:15px;box-shadow:0 4px 20px rgba(6,200,231,.1)}
+.nav-label{color:#94b3ce!important;font-size:10.5px!important;letter-spacing:.16em!important}
+.nav button{color:#d5e7f4!important;font-size:13.5px!important;letter-spacing:0!important;gap:12px!important}
+.nav button.on{color:#fff!important;background:linear-gradient(105deg,#174e7d,#103355)!important}
+.sidebar-collapse-toggle{width:38px;height:38px;right:12px}
+@media(min-width:901px){
+ body.sidebar-collapsed .uam-compact-mark{display:grid!important}
+ body.sidebar-collapsed .uam-brand{display:flex!important;flex-direction:column;gap:10px;padding:0 0 15px!important}
+ body.sidebar-collapsed .sidebar-collapse-toggle{order:2;width:46px!important;height:40px!important}
+ body.sidebar-collapsed .uam-compact-mark{order:1}
+ body.sidebar-collapsed .sidebar-profile{padding:6px 0 8px!important}
+ body.sidebar-collapsed .sidebar-profile .profile-avatar,body.sidebar-collapsed .sidebar-profile .profile-avatar-fallback{max-width:48px}
+ body.sidebar-collapsed .nav button{padding:12px!important}
+}
+/* Course cards — readable in compact semester columns */
+.curriculum-grid{grid-template-columns:repeat(3,minmax(290px,1fr))!important;column-gap:18px!important;row-gap:20px!important}
+.curriculum-sem{border-radius:20px!important}
+.curriculum-sem-head{padding:18px 17px 14px!important}
+.curriculum-sem-head h3{font-size:16px!important}
+.curriculum-sem-body{padding:6px 13px 16px!important;gap:12px!important}
+.curriculum-course{min-height:116px!important;padding:15px 28px 14px 13px!important;border-radius:14px!important;gap:12px!important}
+.curriculum-course .c-body{gap:8px!important}
+.curriculum-course .c-name{font-size:15px!important;line-height:1.33!important;font-weight:780!important;letter-spacing:-.008em!important;margin:1px 0 0!important}
+.curriculum-course .code{font-size:11.5px!important;padding:4px 7px!important}
+.curriculum-course .course-state-label{font-size:10.5px!important;padding:4px 8px!important}
+.curriculum-course .cr{font-size:11px!important;white-space:nowrap;padding:4px 7px!important;opacity:1!important;margin-left:0!important}
+.curriculum-course .c-top{gap:5px!important}
+.curriculum-course .c-req{font-size:11.5px!important;gap:6px!important}
+.curriculum-course .req-label,.curriculum-course .none,.curriculum-course .mini{font-size:11px!important}
+.curriculum-course .mini{padding:3px 7px!important}
+.curriculum-course .c-hint{font-size:11.5px!important}
+.curriculum-course.st-taken .c-name{text-decoration:none!important}
+.curriculum-course .check{min-width:30px!important;width:30px!important;height:30px!important}
+.curriculum-course{grid-template-columns:30px minmax(0,1fr)!important}
+.curriculum-course .course-open-arrow{font-size:22px!important}
+@media(min-width:901px) and (max-width:1300px){.curriculum-grid{grid-template-columns:repeat(2,minmax(290px,1fr))!important}}
+@media(max-width:900px){.curriculum-grid{grid-template-columns:1fr!important;gap:13px!important}.curriculum-course .c-name{font-size:15.5px!important}}
+/* Desktop timetable — TRUE start and end, not rounded by hour */
+.ra-schedule-frame{padding:0!important;overflow:hidden!important;border:1px solid var(--line)!important}
+.ra-schedule-scroll{overflow-x:auto;overflow-y:auto;max-height:740px;scrollbar-color:#869eb6 transparent}
+.ra-timeboard{min-width:950px;color:var(--ink);background:var(--card-bg)}
+.ra-week-head,.ra-board-grid{display:grid;grid-template-columns:76px repeat(6,minmax(145px,1fr));}
+.ra-week-head{position:sticky;top:0;z-index:5;background:#0c3051;color:#fff;min-height:74px}
+.ra-week-head>span{display:grid;place-items:center;font-size:10px;font-weight:900;letter-spacing:.08em}
+.ra-week-head-day{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;border-left:1px solid rgba(255,255,255,.11);font-size:13px;font-weight:800}
+.ra-week-head-day span{font-weight:550;font-size:10px;color:#c9daec}
+.ra-week-head-day small{font-size:9px;color:#5bffff;background:#0b5668;border-radius:9px;padding:1px 6px}
+.ra-week-head-day.is-today{background:#164e6a}
+.ra-time-rail{position:relative;background:var(--route-legacy-surface, #f4f8fc);border-right:1px solid var(--route-legacy-line, #d6e3ef)}
+.ra-time-rail>span{position:absolute;left:0;right:0;transform:translateY(-50%);text-align:center;color:#607c9a;font-size:11.5px;font-weight:750;letter-spacing:.01em;white-space:nowrap;font-variant-numeric:tabular-nums}
+.ra-time-rail>span:first-child{transform:translateY(0)}
+.ra-day-track{position:relative;cursor:crosshair;min-width:0;border-left:1px solid var(--route-legacy-line, #dbe5f0);background:repeating-linear-gradient(to bottom,transparent 0,transparent calc(var(--ra-hour-height) - 1px),var(--route-legacy-soft, #dce6ef) calc(var(--ra-hour-height) - 1px),var(--route-legacy-soft, #dce6ef) var(--ra-hour-height)),var(--route-legacy-surface, #fff)}
+.ra-day-track.is-today{background:repeating-linear-gradient(to bottom,transparent 0,transparent calc(var(--ra-hour-height) - 1px),var(--route-legacy-soft, #c7e6eb) calc(var(--ra-hour-height) - 1px),var(--route-legacy-soft, #c7e6eb) var(--ra-hour-height)),var(--route-legacy-soft, #effbfe)}
+.ra-day-track:hover{box-shadow:inset 0 0 0 2px rgba(7,154,185,.14)}
+.ra-day-track .sched-card.on-board{position:absolute!important;display:flex!important;z-index:2;margin:0;min-height:0;overflow:hidden;padding:9px 10px!important;align-items:flex-start!important;border-radius:9px!important}
+.ra-day-track .sched-card.on-board .sc-time{font-size:10.7px!important}
+.ra-day-track .sched-card.on-board .sc-title{font-size:12px!important;line-height:1.28!important;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.ra-day-track .sched-card.on-board .sc-room{font-size:10px!important}
+body.dark-theme-active .ra-timeboard{background:var(--ra-pane)!important;color:var(--ra-text)!important}
+body.dark-theme-active .ra-week-head{background:#182d45!important}
+body.dark-theme-active .ra-time-rail{background:#0c1929!important;border-color:var(--ra-outline)!important}
+body.dark-theme-active .ra-time-rail>span{color:var(--ra-muted)!important}
+body.dark-theme-active .ra-day-track{border-color:var(--ra-outline)!important;background:repeating-linear-gradient(to bottom,transparent 0,transparent calc(var(--ra-hour-height) - 1px),#34465b calc(var(--ra-hour-height) - 1px),#34465b var(--ra-hour-height)),#111f32!important}
+body.dark-theme-active .ra-day-track.is-today{background:repeating-linear-gradient(to bottom,transparent 0,transparent calc(var(--ra-hour-height) - 1px),#2b5f75 calc(var(--ra-hour-height) - 1px),#2b5f75 var(--ra-hour-height)),#193349!important}
+body.dark-theme-active .schedule-mobile-heading h3{color:var(--ra-text)!important}
+@media(max-width:760px){
+ .ra-schedule-frame.schedule-week-panel{display:none!important}
+ .schedule-mobile{display:block!important}
+ .schedule-day-tabs{gap:6px!important}
+ .schedule-day-tab{font-size:12px!important}
+ .schedule-event-row>time{font-size:12px!important}
+ .schedule-event-row .sched-card{min-height:105px}
+}
+/* Preserve reduced motion accessibility */
+@media(prefers-reduced-motion:reduce){.sidebar,.ra-day-track .sched-card,.curriculum-course{transition:none!important}}

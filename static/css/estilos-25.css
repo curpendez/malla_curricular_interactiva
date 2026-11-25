@@ -1,0 +1,13 @@
+
+/* Definitive hero replacement: no university photo, including mobile layouts. */
+.hero, body .hero, body.dark-theme-active .hero {
+ background-image: radial-gradient(ellipse at 83% 23%, rgba(32,151,249,.38), transparent 40%), radial-gradient(ellipse at 78% 90%, rgba(14,210,234,.18), transparent 42%), linear-gradient(125deg,#06142f 0%,#092453 55%,#07172f 100%) !important;
+ background-color:#071a39 !important;
+ background-size:cover !important;
+ background-position:center !important;
+}
+.hero::before { background:radial-gradient(circle at 87% 35%,rgba(59,156,255,.17),transparent 38%) !important; }
+.hero::after { background-image:radial-gradient(rgba(118,192,255,.17) 1px,transparent 1px) !important; background-size:25px 25px !important; opacity:.38 !important; }
+.hero .uam-wordmark,.hero .uam-logo,.hero [class*="uam-wordmark"] {display:none!important;}
+@media(max-width:900px){.hero,body .hero{background-image:linear-gradient(145deg,#06142f,#103c72 65%,#07172f)!important;background-size:cover!important;background-position:center!important;}}
+@media(max-width:600px){.hero,body .hero{background-image:linear-gradient(145deg,#06142f,#103c72 65%,#07172f)!important;background-size:cover!important;background-position:center!important;}}

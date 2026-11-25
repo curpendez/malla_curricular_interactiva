@@ -1,0 +1,81 @@
+
+/* ===== Accesibilidad + tema automático ===== */
+.appearance-mode-grid{display:grid;grid-template-columns:1fr;gap:9px}
+.appearance-mode-card{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;padding:12px 13px;border:1px solid var(--line);border-radius:12px;background:color-mix(in srgb,var(--card-bg,var(--route-legacy-surface, #fff)) 96%,var(--navy-50));cursor:pointer;transition:.16s}
+.appearance-mode-card:hover{border-color:var(--navy-300);background:color-mix(in srgb,var(--card-bg,var(--route-legacy-surface, #fff)) 90%,var(--navy-50))}
+.appearance-mode-copy{min-width:0;display:flex;flex-direction:column;gap:3px}
+.appearance-mode-copy b{font-size:11.5px;color:var(--ink)}
+.appearance-mode-copy small{font-size:9.7px;line-height:1.45;color:var(--muted)}
+.appearance-mode-card input{width:19px;height:19px;flex:none;accent-color:var(--navy-700);margin-top:1px}
+.appearance-status{display:flex;align-items:center;gap:7px;margin-top:9px;padding:8px 10px;border-radius:9px;background:var(--navy-50);border:1px solid var(--navy-100);font-size:9.6px;color:var(--muted)}
+.appearance-status strong{color:var(--ink)}
+.appearance-status-dot{width:8px;height:8px;border-radius:50%;background:var(--navy-600);box-shadow:0 0 0 4px color-mix(in srgb,var(--navy-600) 14%,transparent)}
+
+/* Modo accesible: más legible, mayor contraste y controles táctiles */
+body.accessible-mode{font-size:16.5px;line-height:1.62}
+body.accessible-mode .topbar h1{font-size:28px}
+body.accessible-mode .topbar p,
+body.accessible-mode .muted-p,
+body.accessible-mode .panel-head p{font-size:14px;color:color-mix(in srgb,var(--ink) 72%,var(--bg))}
+body.accessible-mode .nav button{min-height:50px;font-size:14px;font-weight:650}
+body.accessible-mode .nav-label{font-size:12px;color:color-mix(in srgb,var(--sidebar-text) 72%,transparent)}
+body.accessible-mode .btn{min-height:48px;height:auto;padding:10px 17px;font-size:14px}
+body.accessible-mode .icon-btn{width:44px;height:44px}
+body.accessible-mode input,
+body.accessible-mode select,
+body.accessible-mode textarea{min-height:48px;font-size:16px!important}
+body.accessible-mode .profile-fields input{height:48px!important;font-size:16px!important}
+body.accessible-mode .course{padding:14px 13px;min-height:72px}
+body.accessible-mode .c-name{font-size:15px;font-weight:700}
+body.accessible-mode .code{font-size:13px}
+body.accessible-mode .sem-head h3{font-size:17px}
+body.accessible-mode .badge,
+body.accessible-mode .chip,
+body.accessible-mode .tag{font-size:13px}
+body.accessible-mode .table th{font-size:12.5px}
+body.accessible-mode .table td{font-size:14px;padding-top:14px;padding-bottom:14px}
+body.accessible-mode .kpi b{font-size:29px}
+body.accessible-mode .kpi span{font-size:13.5px;color:color-mix(in srgb,var(--ink) 70%,var(--bg))}
+body.accessible-mode .customizer-panel{font-size:15px}
+body.accessible-mode .customizer-section h3{font-size:12px!important}
+body.accessible-mode .theme-color span,
+body.accessible-mode .theme-control-top,
+body.accessible-mode .theme-check{font-size:13px!important}
+body.accessible-mode .profile-copy small,
+body.accessible-mode .side-prog small{color:color-mix(in srgb,var(--sidebar-text) 74%,transparent)!important}
+body.accessible-mode .course.st-blocked{color:color-mix(in srgb,var(--ink) 90%,#000)}
+body.accessible-mode *{scroll-margin-top:100px}
+body.accessible-mode :focus-visible{outline:3px solid var(--navy-500)!important;outline-offset:3px!important;box-shadow:0 0 0 5px color-mix(in srgb,var(--navy-500) 20%,transparent)!important}
+
+/* Reducir movimiento en accesibilidad y respetar preferencia del sistema */
+body.accessible-mode *,
+body.accessible-mode *::before,
+body.accessible-mode *::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+}
+
+/* Contraste adicional para el tema oscuro automático */
+body.auto-dark-theme{color-scheme:dark}
+body.auto-dark-theme .panel,
+body.auto-dark-theme .slot,
+body.auto-dark-theme .sem,
+body.auto-dark-theme .kpi,
+body.auto-dark-theme .empty,
+body.auto-dark-theme .modal-card,
+body.auto-dark-theme .customizer-panel{border-color:var(--line)}
+body.auto-dark-theme input,
+body.auto-dark-theme select,
+body.auto-dark-theme textarea{background:color-mix(in srgb,var(--card-bg) 92%,#000);color:var(--ink)}
+body.auto-dark-theme input::placeholder,
+body.auto-dark-theme textarea::placeholder{color:var(--muted)}
+body.auto-dark-theme .table tbody tr:hover{background:color-mix(in srgb,var(--card-bg) 84%,var(--navy-800))}
+body.auto-dark-theme .course.st-available{background:color-mix(in srgb,var(--card-bg) 94%,var(--navy-900))}
+body.auto-dark-theme .customizer-section{background:color-mix(in srgb,var(--card-bg) 96%,#000)!important}
+
+@media(max-width:600px){
+  body.accessible-mode{font-size:16px}
+  body.accessible-mode .topbar h1{font-size:23px}
+  body.accessible-mode .bottom-nav button{min-height:58px;font-size:12px}
+  body.accessible-mode .mobile-more-item{min-height:52px}
+}

@@ -1,0 +1,45 @@
+
+.course-folder-entry {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 12px; align-items: center;
+  width: 100%; padding: 13px; text-align: left; border-radius: 14px;
+  background: var(--route-selected, var(--navy-50)); border: 1px solid var(--ra-border, var(--line));
+  color: var(--ra-text, var(--ink));
+}
+.course-folder-entry:hover { border-color: var(--route-highlight, var(--navy-700)); }
+.course-folder-entry strong, .course-folder-entry small { display: block; }
+.course-folder-entry small, .course-folder-card small, .course-folder-empty, .course-folder-hint {
+  color: var(--route-muted, var(--muted)); font-size: 12px;
+}
+.course-folder-icon {
+  display: grid; place-items: center; width: 36px; height: 36px; border-radius: 10px;
+  background: var(--route-control, var(--navy-50)); color: var(--route-highlight, var(--navy-700));
+}
+.course-folder-grid {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: start;
+}
+.course-folder-card {
+  min-width: 0; display: grid; gap: 10px; padding: 13px; border-radius: 14px;
+  background: var(--ra-card, var(--route-legacy-surface, #fff));
+  border: 1px solid var(--ra-border, var(--line)); color: var(--ra-text, var(--ink));
+}
+.course-folder-card header, .course-folder-item { display: flex; align-items: center; gap: 8px; }
+.course-folder-card header { flex-wrap: wrap; }
+.course-folder-card header h3 { flex: 1; margin: 0; font-size: 14px; }
+.course-folder-card header .btn { padding: 6px 9px; font-size: 12px; }
+.course-folder-card ul { display: grid; gap: 6px; list-style: none; margin: 0; padding: 0; }
+.course-folder-item {
+  min-width: 0; padding: 5px 6px 5px 9px; border-radius: 8px;
+  background: var(--route-control, var(--navy-50));
+}
+.course-folder-item > :first-child {
+  flex: 1; min-width: 0; padding: 4px 0; text-align: left; overflow-wrap: anywhere;
+  color: var(--ra-text, var(--ink)); font-size: 13px; font-weight: 650;
+}
+.course-folder-item > :first-child:hover { text-decoration: underline; }
+.course-folder-item .icon-btn { flex: 0 0 28px; width: 28px; height: 32px; }
+.course-folder-item .icon-btn svg { width: 15px; height: 15px; }
+.course-folder-back svg { transform: rotate(180deg); }
+.course-folder-empty { margin: 0; }
+@media (max-width: 560px) {
+  .course-folder-grid { grid-template-columns: minmax(0, 1fr); }
+}

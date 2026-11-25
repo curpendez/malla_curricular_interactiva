@@ -1,0 +1,46 @@
+
+/* Paleta fija obligatoria: azul marino + turquesa */
+#appearanceModesSection .appearance-mode-card:has(#themeAutoMode),#appearanceModesSection .appearance-status,.profile-accent-row,.theme-presets,.theme-colors,[data-theme-preset],.theme-control,.theme-check{display:none!important;}
+.customizer-section:has(.theme-presets),
+.customizer-section:has(.theme-colors),
+.customizer-section:has(.theme-control),
+.customizer-section:has(#themePrimary),
+.customizer-section:has(#themeTaken),
+.customizer-section:has(#themeSchedule1){display:none!important;}
+.customizer-panel .customizer-save-note{background:var(--route-legacy-soft, #eff5f8)!important;border:1px solid var(--route-legacy-line, #d2dce8)!important;color:#516983!important;}
+:root{
+  --sidebar-bg:#041a3d;
+  --sidebar-text:#ffffff;
+  --topbar-bg:#f6f8fb;
+  --btn-primary:#0099A8;
+  --on-btn-primary:#ffffff;
+  --status-taken:#0d407f;
+  --on-status-taken:#ffffff;
+  --status-available:#ffffff;
+  --status-blocked:#e8edf2;
+  --table-head:#0c2d59;
+  --on-table-head:#ffffff;
+  --schedule-1:#0f4c81;
+  --schedule-2:#0099A8;
+  --schedule-3:#49657f;
+  --fab-color:#0099A8;
+  --danger:#c44559;
+}
+body{background:var(--route-legacy-soft, #eef1f4)!important;color:#102b4c!important;}
+.sidebar{background:linear-gradient(180deg,#071e46 0%, #041a3d 45%, #03152f 100%)!important;color:#fff!important;}
+.nav button.on{background:rgba(255,255,255,.12)!important;color:#fff!important;border:1px solid rgba(78,214,236,.24)!important;box-shadow:none!important;}
+.nav button:hover{background:rgba(255,255,255,.08)!important;}
+.brand .logo{background:#0e2f5a!important;color:#dff9ff!important;border:1px solid rgba(78,214,236,.3)!important;}
+.profile-card,.side-card{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.03))!important;border-color:rgba(94,152,196,.22)!important;}
+.profile-edit-button,.btn.primary,.career-pill,.seg button.on,.sem-check.on,.avg-box.passed,.badge.st-taken{background:#0099A8!important;color:#fff!important;border-color:#0099A8!important;}
+.topbar h1,.panel:not(.highlight) .panel-head h3,.sem-head h3,.slot-name,.m-head h2{color:#102b4c!important;}
+.link,.tag,.badge.st-available,.rec-title .code,.code,.filter span,.sem-pill{color:#0d6281!important;}
+.link,.tag,.badge.st-available,.filter span,.sem-pill{background:var(--route-legacy-soft, #e6f7fa)!important;border-color:var(--route-legacy-line, #bfe7ef)!important;}
+.table th,.sched-header,.grade-semester-head{background:#0c2d59!important;color:#fff!important;}
+.btn.primary:hover{background:#0f8798!important;}
+.hero,.panel.highlight,.combined{background:radial-gradient(100% 160% at 100% 0%,rgba(0,153,168,.48) 0%,transparent 50%),linear-gradient(145deg,#0c2d59,#041a3d)!important;color:#fff!important;}
+.hero p,.panel.highlight .panel-head p,.combined .prog-nums span{color:rgba(255,255,255,.78)!important;}
+.customizer-panel{background:var(--route-legacy-surface, #fff)!important;color:#102b4c!important;}
+.customizer-head,.customizer-section.profile-upgraded-section{border-color:var(--route-legacy-line, #dde6ef)!important;}
+.profile-photo-picker>span{background:linear-gradient(135deg,#0c2d59,#0099A8)!important;}
+.profile-accent-btn.is-active,.profile-accent-btn[aria-pressed="true"]{outline:2px solid #0099A8!important;box-shadow:0 0 0 4px rgba(0,153,168,.15)!important;}

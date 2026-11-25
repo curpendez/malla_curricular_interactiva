@@ -1,0 +1,6 @@
+
+.grade-estimate-target { display:inline-block; max-width:18ch; font-size:12px; line-height:1.4; }
+.grade-sim-controls [hidden] { display:none !important; }
+#gradeSimResult .sim-projection { margin-top:10px; }
+.history-estimate-reference { padding:8px 10px; border:1px solid var(--ra-border); border-radius:8px; background:var(--ra-soft); }
+#gradeSimResult .grade-sim-score b { font-size:clamp(13px, 2vw, 20px); }

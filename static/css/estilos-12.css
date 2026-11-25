@@ -1,0 +1,16 @@
+
+/* Fallback visible until the full JavaScript app finishes booting.
+   iOS Quick Look can render HTML while blocking app JavaScript, so this avoids a blank page. */
+.compat-fallback{position:fixed;inset:0;z-index:10000;display:flex;align-items:flex-start;justify-content:center;padding:calc(72px + env(safe-area-inset-top,0px)) 18px calc(28px + env(safe-area-inset-bottom,0px));background:linear-gradient(180deg,var(--route-legacy-surface, #f7f9fd) 0%,var(--route-legacy-soft, #eef3fb) 100%);color:#0a0c10;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow:auto}
+.compat-card{width:min(100%,520px);margin:auto 0;background:var(--route-legacy-surface, #fff);border:1px solid var(--route-legacy-line, #dde4ef);border-radius:24px;padding:24px;box-shadow:0 18px 48px rgba(6,20,47,.12);text-align:center}
+.compat-logo{width:64px;height:64px;margin:0 auto 16px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(145deg,#112c63,#06142f);color:#fff;font-weight:900;font-size:23px;letter-spacing:-.04em;box-shadow:0 10px 24px rgba(6,20,47,.20)}
+.compat-card h1{font-size:24px;line-height:1.15;letter-spacing:-.035em;margin:0 0 8px}
+.compat-card p{font-size:14px;line-height:1.55;color:#677086;margin:0 auto;max-width:42ch}
+.compat-device-note{margin-top:18px;padding:14px 15px;border-radius:14px;background:var(--route-legacy-soft, #f2f5fb);border:1px solid var(--route-legacy-line, #e2e6ee);text-align:left;color:#252b38;font-size:13px;line-height:1.5}
+.compat-device-note b{display:block;margin-bottom:4px;color:#06142f}
+.compat-steps{margin:14px 0 0;padding:0;display:grid;gap:8px;text-align:left;list-style:none}
+.compat-steps li{display:flex;gap:9px;align-items:flex-start;font-size:12.5px;color:#677086}
+.compat-steps span{flex:none;width:22px;height:22px;border-radius:7px;display:grid;place-items:center;background:var(--route-legacy-soft, #e4eaf6);color:#112c63;font-size:11px;font-weight:800}
+.compat-status{margin-top:16px;font-size:11px;color:#8a93a5}
+html.app-ready .compat-fallback{display:none!important}
+@media(min-width:901px){.compat-card{padding:30px}.compat-card h1{font-size:28px}}

@@ -1,0 +1,12 @@
+
+.ruta-app body#raAppTheme.ra-theme-v2 .curriculum-course > .check[aria-pressed="false"] {
+  background:var(--ra-card) !important;
+  border:2px solid var(--route-status-blocked) !important;
+}
+.ruta-app body#raAppTheme.ra-theme-v2 .curriculum-course > .check[aria-pressed="true"] {
+  background:#197452 !important;
+  border:2px solid transparent !important;
+}
+.ruta-app body#raAppTheme.ra-theme-v2 .curriculum-course > .check[aria-pressed="true"] .ic {
+  color:#fff !important;
+}

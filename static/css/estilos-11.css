@@ -1,0 +1,158 @@
+
+/* ===== Ruta Académica · experiencia universal (Android / macOS / Windows) ===== */
+:root{
+  --safe-top:env(safe-area-inset-top,0px);
+  --safe-right:env(safe-area-inset-right,0px);
+  --safe-bottom:env(safe-area-inset-bottom,0px);
+  --safe-left:env(safe-area-inset-left,0px);
+  --mobile-dock-h:72px;
+}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;}
+body{overscroll-behavior-y:none;min-width:0;}
+button,a,input,select,textarea{-webkit-tap-highlight-color:transparent;}
+button,[role="button"],label[for]{touch-action:manipulation;}
+img,svg{max-width:100%;}
+main,.view,.fade,.panel,.table-wrap,.schedule-panel{min-width:0;}
+.table-wrap,.schedule-panel{max-width:100%;-webkit-overflow-scrolling:touch;}
+.course,.agenda-row,.rec-row,.req-row{overflow-wrap:anywhere;}
+.install-app-btn{display:flex;align-items:center;gap:10px;width:100%;min-height:36px;padding:7px 9px;border-radius:7px;color:color-mix(in srgb,var(--sidebar-text) 56%,transparent);font-size:10px;text-align:left;}
+.install-app-btn:hover{color:var(--sidebar-text);background:color-mix(in srgb,var(--sidebar-text) 6%,transparent);}
+.install-symbol{width:16px;height:16px;display:grid;place-items:center;border:1px solid currentColor;border-radius:5px;font-size:12px;line-height:1;}
+.install-app-btn[hidden]{display:none!important;}
+.mobile-dock{display:none;}
+
+/* Essential actions must never depend on hover on touch devices. */
+@media (hover:none),(pointer:coarse){
+  .btn,.filter,.seg button,.add-btn,.sem-check,.agenda-check,.icon-btn,.profile-edit-button,.side-actions button{min-height:44px;}
+  .icon-btn{min-width:44px;}
+  .course:hover,.rec-row:hover,.req-row:hover,.sched-card:hover{transform:none!important;}
+  .course .c-edit,.c-edit{opacity:1!important;position:static!important;margin-left:auto;background:transparent!important;box-shadow:none!important;align-self:flex-start;}
+  .course{cursor:default;}
+  .drop{min-height:150px;}
+}
+
+@media (max-width:900px){
+  body{padding-bottom:calc(var(--mobile-dock-h) + var(--safe-bottom));}
+  body.menu-open{overflow:hidden;}
+  .sidebar{
+    width:min(88vw,320px)!important;
+    height:100vh!important;
+    height:100dvh!important;
+    padding-top:calc(18px + var(--safe-top))!important;
+    padding-bottom:calc(18px + var(--safe-bottom))!important;
+    overscroll-behavior:contain;
+    -webkit-overflow-scrolling:touch;
+  }
+  .backdrop{touch-action:none;}
+  .topbar{
+    top:0!important;
+    padding-top:calc(12px + var(--safe-top))!important;
+    padding-right:calc(16px + var(--safe-right))!important;
+    padding-left:calc(16px + var(--safe-left))!important;
+  }
+  .view{
+    padding-right:calc(16px + var(--safe-right))!important;
+    padding-left:calc(16px + var(--safe-left))!important;
+    padding-bottom:32px!important;
+  }
+  .mobile-dock{
+    position:fixed;
+    z-index:85;
+    left:10px;
+    right:10px;
+    bottom:calc(8px + var(--safe-bottom));
+    min-height:64px;
+    display:grid;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:4px;
+    padding:6px;
+    border:1px solid color-mix(in srgb,var(--line) 88%,transparent);
+    border-radius:20px;
+    background:color-mix(in srgb,var(--card-bg,var(--route-legacy-surface, #fff)) 92%,transparent);
+    box-shadow:0 14px 40px rgba(3,11,28,.18);
+    -webkit-backdrop-filter:blur(18px) saturate(150%);
+    backdrop-filter:blur(18px) saturate(150%);
+  }
+  .mobile-dock button{
+    min-width:0;
+    min-height:52px;
+    padding:5px 2px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:3px;
+    border-radius:14px;
+    color:var(--muted);
+    font-size:9px;
+    font-weight:750;
+    line-height:1.05;
+  }
+  .mobile-dock button .ic{width:20px;height:20px;}
+  .mobile-dock button.on{background:var(--navy-100);color:var(--navy-800);}
+  .mobile-dock button:active{transform:scale(.96);}
+  .mobile-dock .dock-more{color:var(--ink-2);}
+  .top-stats{display:none!important;}
+  .modal{padding:calc(12px + var(--safe-top)) calc(10px + var(--safe-right)) calc(12px + var(--safe-bottom)) calc(10px + var(--safe-left))!important;align-items:end!important;}
+  .modal-card{max-height:min(88vh,88dvh)!important;border-radius:22px 22px 12px 12px!important;}
+  .customizer-panel{padding-bottom:calc(24px + var(--safe-bottom))!important;}
+  input,select,textarea{font-size:16px!important;}
+  .form input,.form select{min-height:46px;}
+  .form textarea{min-height:110px;}
+  .toolbar{align-items:stretch;}
+  .search{min-height:46px;}
+  .search input{font-size:16px!important;}
+  .row-gap>.btn{flex:1 1 auto;}
+}
+
+@media (max-width:620px){
+  .topbar{min-height:70px!important;}
+  .topbar h1{font-size:19px!important;}
+  .topbar p{display:none!important;}
+  .view{padding-top:12px!important;}
+  .curriculum-hero{padding:18px!important;border-radius:18px!important;}
+  .curriculum-hero h2{font-size:22px!important;}
+  .curriculum-metrics{grid-template-columns:1fr 1fr!important;gap:8px!important;}
+  .curriculum-toolbar{position:static!important;top:auto!important;}
+  .curriculum-toolbar-left .search{min-width:100%!important;}
+  .curriculum-grid{grid-template-columns:1fr!important;gap:12px!important;}
+  .curriculum-sem{border-radius:16px!important;}
+  .semester-primary-action{width:100%!important;}
+  .panel-head{flex-direction:column;align-items:stretch!important;}
+  .panel-head>.row-gap,.panel-head>.btn{width:100%;}
+  .detail-grid{grid-template-columns:1fr 1fr!important;}
+  .f-row{grid-template-columns:1fr!important;}
+  .f-row>*{grid-column:auto!important;}
+  .grade-opts{margin-left:0!important;width:100%;}
+  .config-label,.config-check{flex:1 1 100%;justify-content:space-between;}
+  .agenda-row{padding:12px 10px!important;}
+  .agenda-actions{justify-content:flex-start;}
+  .study-layout{gap:12px!important;}
+  .focus-time{font-size:48px!important;}
+  .toasts{left:10px!important;right:10px!important;bottom:calc(var(--mobile-dock-h) + 18px + var(--safe-bottom))!important;}
+  .toast{max-width:none!important;width:100%;}
+}
+
+@media (max-width:380px){
+  .mobile-dock{left:6px;right:6px;gap:1px;padding:5px;border-radius:18px;}
+  .mobile-dock button{font-size:8px;}
+  .mobile-dock button .ic{width:18px;height:18px;}
+  .curriculum-metrics{grid-template-columns:1fr!important;}
+  .detail-grid,.slot-stats,.prog-nums{grid-template-columns:1fr!important;}
+}
+
+@media (orientation:landscape) and (max-height:520px) and (max-width:900px){
+  :root{--mobile-dock-h:62px;}
+  .mobile-dock{min-height:54px;}
+  .mobile-dock button{min-height:44px;flex-direction:row;font-size:9px;gap:4px;}
+  .mobile-dock button .ic{width:17px;height:17px;}
+  .sidebar{width:min(70vw,330px)!important;}
+}
+
+@media (display-mode:standalone){
+  .install-app-btn{display:none!important;}
+}
+
+@supports not (backdrop-filter:blur(10px)){
+  .topbar,.mobile-dock{background:var(--card-bg,var(--route-legacy-surface, #fff))!important;}
+}

@@ -1,0 +1,49 @@
+
+/* Contraste de filtros, campos y menús que conservaban superficies claras */
+body.dark-theme-active .toolbar,body.dark-theme-active .curriculum-toolbar,body.dark-theme-active .grade-opts,body.dark-theme-active .grade-policy-compact,body.dark-theme-active .grade-policy-strip{background:var(--ra-pane)!important;border-color:var(--ra-outline)!important;color:var(--ra-text)!important}
+body.dark-theme-active .grade-opts .config-check,body.dark-theme-active .grade-opts .config-label,body.dark-theme-active .toolbar .seg,body.dark-theme-active .toolbar .filter{background:var(--ra-control)!important;border-color:var(--ra-outline)!important;color:var(--ra-text)!important}
+body.dark-theme-active .toolbar .seg button:not(.on),body.dark-theme-active .toolbar .filter:not(.on),body.dark-theme-active .grade-policy-compact span,body.dark-theme-active .grade-policy-strip span{color:var(--ra-muted)!important}
+body.dark-theme-active .grade-opts .config-check span,body.dark-theme-active .grade-opts .config-label span{color:var(--ra-text)!important}
+body.dark-theme-active .grade-semester-head,body.dark-theme-active .grade-semester-title,body.dark-theme-active .grade-semester-summary span{background:var(--ra-pane-2)!important;color:var(--ra-text)!important;border-color:var(--ra-outline)!important}
+body.dark-theme-active .grade-semester-title p,body.dark-theme-active .grade-semester-head p{color:var(--ra-muted)!important}
+body.dark-theme-active .grade-policy-compact .policy-pass,body.dark-theme-active .grade-policy-strip .policy-pass{background:#133c36!important;color:#b6f8df!important}
+body.dark-theme-active .grade-policy-compact .policy-call,body.dark-theme-active .grade-policy-strip .policy-call{background:#46351d!important;color:#ffe3a6!important}
+body.dark-theme-active .grade-policy-compact .policy-fail,body.dark-theme-active .grade-policy-strip .policy-fail{background:#4d2933!important;color:#ffd2da!important}
+body.dark-theme-active .toolbar .search input::placeholder{color:#bdcde0!important}
+
+/* ===== Distinciones académicas UAM ===== */
+.honors-panel{--honors-card:var(--route-legacy-surface, #fff);--honors-text:#17345c;--honors-muted:#647896;--honors-outline:#dfe8f3;--honors-inset:var(--route-legacy-soft, #f2f7fd);
+  margin:0 0 22px;padding:24px;border:1px solid var(--honors-outline);border-radius:24px;
+  background:var(--honors-card);color:var(--honors-text);box-shadow:0 12px 32px rgba(12,34,69,.055)}
+.honors-top{display:flex;gap:22px;align-items:center;justify-content:space-between;margin-bottom:18px;flex-wrap:wrap}
+.honors-kicker{display:inline-flex;gap:8px;align-items:center;font-size:11px;font-weight:850;letter-spacing:.16em;color:#0d7893;margin-bottom:8px}
+.honors-kicker .ic{width:15px;height:15px}.honors-top h3{font-size:23px;letter-spacing:-.035em;line-height:1.2;color:var(--honors-text);margin-bottom:5px}.honors-top p{color:var(--honors-muted);font-size:13px;max-width:560px}
+.honors-scale-label{display:flex;flex-direction:column;gap:7px;font-size:12px;color:var(--honors-muted);font-weight:750}
+.honors-scale-label select{min-width:240px;max-width:100%;height:42px;border-radius:12px;border:1px solid var(--honors-outline);padding:0 12px;background:var(--honors-inset);color:var(--honors-text);font:inherit;cursor:pointer}
+.honors-overview{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(210px,1fr);gap:12px;margin-bottom:15px}
+.honors-cra-summary,.honors-cra-meta{background:var(--honors-inset);border:1px solid var(--honors-outline);border-radius:18px;padding:20px}
+.honors-cra-summary small{display:block;color:var(--honors-muted);font-weight:600;font-size:12px;margin-bottom:6px}
+.honors-cra-summary>strong{display:block;color:var(--honors-text);font-size:42px;line-height:1.1;letter-spacing:-.055em;font-weight:850}
+.honors-cra-summary>strong span{font-size:15px;color:var(--honors-muted);font-weight:600;letter-spacing:0}
+.honors-rank{display:inline-flex;align-items:center;gap:6px;border-radius:30px;padding:6px 10px;margin:9px 0 10px;font-size:12px;font-weight:800;background:var(--route-legacy-soft, #e3edf8);color:#244875}
+.honors-rank.cum{background:var(--route-legacy-soft, #e9f3fc);color:#165a99}.honors-rank.magna{background:var(--route-legacy-soft, #f1eafa);color:#7145a5}.honors-rank.summa{background:var(--route-legacy-warning, #fff1d9);color:#93590a}.honors-rank .ic{width:14px;height:14px}
+.honors-meter{height:8px;border-radius:99px;overflow:hidden;background:var(--route-legacy-soft, #dce7f2)}.honors-meter i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#0786b6,var(--route-legacy-soft, #36d1d4))}
+.honors-cra-summary p{margin-top:9px;font-size:12px;color:var(--honors-muted)}
+.honors-cra-meta{display:grid;grid-template-columns:1fr;gap:8px;padding:13px 19px}.honors-cra-meta>div{display:flex;justify-content:space-between;align-items:center;gap:8px;border-bottom:1px solid var(--honors-outline);padding:4px 0 9px}.honors-cra-meta>div:last-child{border:0;padding-bottom:0}
+.honors-cra-meta b{font-size:24px;color:var(--honors-text);font-weight:800}.honors-cra-meta span{font-size:12px;color:var(--honors-muted);text-align:right}
+.honors-tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.honors-tier{background:var(--honors-inset);border:1px solid var(--honors-outline);border-radius:16px;padding:15px;display:flex;flex-direction:column;gap:7px;min-width:0}
+.honors-tier.current{outline:2px solid #2bcbd5;outline-offset:-2px}.honors-tier-mark{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;background:var(--route-legacy-soft, #d7edf6);color:#095f87}
+.honors-tier.magna .honors-tier-mark{background:var(--route-legacy-soft, #e8dbf9);color:#7649ab}.honors-tier.summa .honors-tier-mark{background:var(--route-legacy-warning, #fff0c6);color:#99660f}
+.honors-tier h4{font-size:16px;line-height:1.2;color:var(--honors-text)}.honors-tier p{font-size:11px;color:var(--honors-muted)}.honors-tier strong{font-size:22px;letter-spacing:-.025em;color:var(--honors-text);margin-top:auto}
+.honors-current{font-size:11px;color:#07838f;font-weight:800}.honors-conditions{margin-top:14px;border-top:1px solid var(--honors-outline);padding-top:13px}
+.honors-conditions p{font-size:12px;color:var(--honors-muted);line-height:1.6;margin:0 0 7px}.honors-conditions p b{color:var(--honors-text)}
+.honors-conditions a,.honors-empty a{display:inline-flex;align-items:center;gap:7px;color:#0b789c;font-size:12px;font-weight:800;text-decoration:none}
+.honors-conditions a:hover,.honors-empty a:hover{text-decoration:underline}.honors-conditions a .ic{width:14px;height:14px}
+body.dark-theme-active .honors-panel{--honors-card:#101d30;--honors-text:#f1f8ff;--honors-muted:#c2d1e6;--honors-outline:#37506b;--honors-inset:#1a2c43;box-shadow:none}
+body.dark-theme-active .honors-kicker{color:#80eaf1}body.dark-theme-active .honors-rank{background:#294763;color:#e2f2ff}
+body.dark-theme-active .honors-rank.cum{background:#164963;color:#bceeff}body.dark-theme-active .honors-rank.magna{background:#483562;color:#eed8ff}body.dark-theme-active .honors-rank.summa{background:#5b4825;color:#ffe2a3}
+body.dark-theme-active .honors-meter{background:#344a61}body.dark-theme-active .honors-tier-mark{background:#255672;color:#c6f4ff}body.dark-theme-active .honors-tier.magna .honors-tier-mark{background:#513d69;color:#eed5ff}body.dark-theme-active .honors-tier.summa .honors-tier-mark{background:#5e4a2c;color:#ffe3b3}
+body.dark-theme-active .honors-conditions a{color:#89e5fb}body.dark-theme-active .honors-scale-label select{color:var(--honors-text)!important;background:var(--honors-inset)!important;border-color:var(--honors-outline)!important}
+@media(max-width:850px){.honors-overview{grid-template-columns:1fr}.honors-cra-meta{grid-template-columns:repeat(3,1fr);gap:10px}.honors-cra-meta>div{flex-direction:column;align-items:flex-start;justify-content:start;border-bottom:0;border-right:1px solid var(--honors-outline);padding-right:9px}.honors-cra-meta>div:last-child{border:0}.honors-cra-meta span{text-align:left}}
+@media(max-width:550px){.honors-panel{padding:17px;border-radius:17px}.honors-top h3{font-size:20px}.honors-scale-label{width:100%}.honors-scale-label select{width:100%;min-width:0}.honors-cra-summary>strong{font-size:36px}.honors-tiers{grid-template-columns:1fr}.honors-tier{display:grid;grid-template-columns:34px minmax(0,1fr) auto;align-items:center;gap:10px}.honors-tier strong{font-size:18px;white-space:nowrap}.honors-tier .honors-current{grid-column:2/4}.honors-cra-meta{gap:6px;padding:10px}.honors-cra-meta b{font-size:20px}.honors-cra-meta span{font-size:10px}}
+

@@ -1,0 +1,28 @@
+
+/* All dependency labels use readable surfaces, including the stronger first steps. */
+body#raAppTheme.ra-theme-v2 .chip{display:inline-flex!important;align-items:center;justify-content:flex-start;gap:7px;min-width:0!important;max-width:100%!important;min-height:35px!important;padding:8px 11px!important;background:var(--ra-chip-pending)!important;border:1px solid var(--ra-border)!important;border-radius:10px!important;color:var(--ra-text)!important;font-family:inherit!important;font-size:11px!important;font-weight:650!important;line-height:1.5!important;white-space:normal!important;text-align:left!important;overflow-wrap:anywhere!important;box-shadow:none!important}
+body#raAppTheme.ra-theme-v2 .chip.ok{background:var(--ra-approved)!important}
+body#raAppTheme.ra-theme-v2 .chip.pend.strong{background:var(--ra-chip-first)!important;border-color:var(--ra-progress-bar)!important;color:var(--ra-text)!important;font-weight:750!important}
+body#raAppTheme.ra-theme-v2 .chip :is(span,svg){color:var(--ra-text)!important}
+body#raAppTheme.ra-theme-v2 .chip .ic{width:13px;height:13px;flex:none;stroke:currentColor!important}
+body#raAppTheme.ra-theme-v2 button.chip:hover{background:var(--ra-chip-first)!important;border-color:var(--ra-progress-bar)!important;transform:translateY(-1px);box-shadow:0 3px 9px #0000000a!important}
+body#raAppTheme.ra-theme-v2 button.chip:focus-visible{outline:2px solid var(--ra-progress-bar)!important;outline-offset:3px}
+body#raAppTheme.ra-theme-v2 .chip.unresolved{border-style:dashed!important}
+body#raAppTheme.ra-theme-v2 .req-row{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr) minmax(0,1.35fr)!important;gap:19px!important;align-items:start!important;padding:19px 20px!important;border-left:3px solid var(--ra-progress-bar)!important;box-shadow:0 3px 13px #00000004!important}
+.req-row>div{min-width:0}.req-course b{line-height:1.55}.req-col label{font-size:10px!important;line-height:1.5;margin-bottom:9px!important;letter-spacing:.07em}
+.req-col .chips{gap:7px}.req-paths{display:grid;gap:11px;margin-top:13px;padding-top:12px;border-top:1px solid var(--ra-border)}
+.req-path-label{font-size:9px;font-weight:750;display:block;margin-bottom:7px}
+.req-path ol{display:flex;align-items:center;gap:5px;flex-wrap:wrap;padding:0;margin:0;list-style:none}
+.req-path li{display:inline;min-width:0;font-size:10px;line-height:1.75;overflow-wrap:anywhere}
+.req-path li+li::before{content:'→';display:inline-block;padding:0 6px 0 1px;font-weight:750}
+/* Page decoration is removed. The neutral canvas follows the selected mode. */
+body#raAppTheme.ra-theme-v2,body#raAppTheme.ra-theme-v2 :is(.app,main){background-color:var(--ra-page)!important;background-image:none!important}
+body#raAppTheme.ra-theme-v2[data-ra-mode=dark] main{background:var(--ra-page)!important;background-image:none!important}
+body#raAppTheme.ra-theme-v2[data-ra-mode=dark] .view{background:var(--ra-workspace)!important;border-color:var(--ra-border)!important;border-radius:20px!important;box-shadow:0 14px 38px #00000029!important}
+body#raAppTheme.ra-theme-v2[data-ra-mode=dark] .topbar{background:var(--ra-card)!important;box-shadow:none!important;border-bottom:1px solid var(--ra-border)!important}
+body#raAppTheme.ra-theme-v2[data-ra-mode=dark] .sidebar{background:var(--ra-sidebar)!important;box-shadow:inset -1px 0 #00000010,6px 0 24px #00000012!important}
+body#raAppTheme.ra-theme-v2[data-ra-mode=dark] :is(.panel,.kpi,.slot,.sem,.req-row,.modal-card,.ra-progress-card){box-shadow:0 4px 17px #0000000b!important}
+body#raAppTheme.ra-theme-v2[data-ra-mode=dark] :is(.btn,.icon-btn,.filter){border-color:var(--ra-border)!important}
+body#raAppTheme.ra-theme-v2[data-ra-mode=dark] :is(.tag.dark,.badge.st-blocked,.badge.st-taken){background:var(--ra-chip-first)!important;color:var(--ra-text)!important}
+@media(max-width:1100px){body#raAppTheme.ra-theme-v2 .req-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important}.req-row .req-course{grid-column:1/-1}}
+@media(max-width:620px){body#raAppTheme.ra-theme-v2 .req-row{grid-template-columns:minmax(0,1fr)!important;gap:15px!important;padding:17px!important}.req-row .req-course{grid-column:auto}body#raAppTheme.ra-theme-v2 .chip{font-size:12px!important;min-height:39px!important}.req-col label{font-size:10px!important}.req-path li{font-size:11px}}

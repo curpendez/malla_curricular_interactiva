@@ -1,0 +1,137 @@
+
+.risk-dashboard {
+  --risk-critical: #9c2c3a;
+  --risk-attention: #855311;
+  --risk-favorable: #006c72;
+  --risk-empty: #536f84;
+  display: grid;
+  gap: 15px;
+}
+[data-ra-mode="dark"] .risk-dashboard {
+  --risk-critical: #f3a0aa;
+  --risk-attention: #edc284;
+  --risk-favorable: #76dad3;
+  --risk-empty: #a8c6dc;
+}
+.risk-dashboard .is-critical { --risk-tone: var(--risk-critical); }
+.risk-dashboard .is-attention { --risk-tone: var(--risk-attention); }
+.risk-dashboard .is-favorable { --risk-tone: var(--risk-favorable); }
+.risk-dashboard .is-empty { --risk-tone: var(--risk-empty); }
+.risk-dashboard-tools { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
+.risk-dashboard-tools .seg { max-width: 100%; flex-wrap: wrap; }
+.risk-dashboard-tools .seg button { white-space: normal; }
+.risk-overview {
+  overflow: hidden;
+  min-width: 0;
+  border-radius: 18px;
+  background: var(--ra-card);
+  border: 1px solid var(--ra-border);
+  box-shadow: var(--route-elevation);
+}
+.risk-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 9px;
+  padding: clamp(16px,3vw,26px);
+  background: linear-gradient(125deg,var(--uam-deep,#031934),var(--uam-ink,#0d2b59));
+}
+.ruta-app body#raAppTheme.ra-theme-v2 .risk-heading h2 { color: #f3fafb !important; font-size: clamp(21px,2.8vw,31px); line-height: 1.15; letter-spacing: -.035em; }
+.ruta-app body#raAppTheme.ra-theme-v2 .risk-heading :is(p,span) { color: #c8e6ed !important; font-size: 13px; line-height: 1.4; }
+.risk-heading p { margin-top: 5px; }
+.risk-distribution { display: flex; overflow: hidden; border-radius: 5px; height: 7px; margin: 15px 16px 0; }
+.risk-distribution > i { display: block; flex: none; height: 100%; background: var(--risk-tone); }
+.risk-stats { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 8px; padding: 12px 16px 15px; }
+.risk-stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  padding: 9px;
+  border: 1px solid var(--ra-border);
+  border-radius: 10px;
+  background: var(--route-control);
+}
+.risk-stat-icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: color-mix(in srgb,var(--ra-card) 89%,var(--risk-tone));
+}
+.ruta-app body#raAppTheme.ra-theme-v2 .risk-stat-icon > .ic { width: 17px; height: 17px; color: var(--risk-tone) !important; }
+.risk-stat b { display: block; font-size: 20px; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.ruta-app body#raAppTheme.ra-theme-v2 .risk-stat div > span { color: var(--route-muted) !important; font-size: 11px; }
+.risk-results > header { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 9px; margin-bottom: 9px; }
+.risk-results > header h2 { font-size: 21px; letter-spacing: -.035em; }
+.risk-results > header p { font-size: 12px; }
+.risk-results > header label { display: flex; align-items: center; gap: 6px; font-size: 12px; }
+.ruta-app body#raAppTheme.ra-theme-v2 #riskFilter { min-width: 0; max-width: 100%; min-height: 41px; border: 1px solid var(--ra-border) !important; border-radius: 8px; padding: 7px 8px; background: var(--ra-card) !important; }
+.risk-course-list { display: grid; gap: 8px; }
+.risk-course {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(0,1.35fr) minmax(130px, .75fr) minmax(0,1.02fr) auto;
+  align-items: center;
+  gap: clamp(8px,1.55vw,15px);
+  background: var(--ra-card);
+  border: 1px solid var(--ra-border);
+  border-left: 3px solid var(--risk-tone);
+  border-radius: 11px;
+  padding: 12px;
+}
+.risk-course h3 { font-size: 14px; line-height: 1.36; overflow-wrap: anywhere; margin: 3px 0; letter-spacing: -.015em; }
+.risk-course p { font-size: 11px; line-height: 1.4; overflow-wrap: anywhere; }
+.risk-course-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  max-width: 100%;
+  padding: 3px 6px;
+  border-radius: 6px;
+  background: color-mix(in srgb,var(--ra-card) 92%,var(--risk-tone));
+  font-size: 10px;
+  line-height: 1.25;
+  font-weight: 690;
+}
+.ruta-app body#raAppTheme.ra-theme-v2 .risk-course-status,.ruta-app body#raAppTheme.ra-theme-v2 .risk-course-status .ic { color: var(--risk-tone) !important; }
+.risk-course-status .ic { width: 13px; height: 13px; flex: none; }
+.risk-partials { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 4px; margin: 0; font-variant-numeric: tabular-nums; }
+.risk-partials > div { min-width: 0; padding: 5px 2px; background: var(--route-control); border: 1px solid var(--ra-border); border-radius: 7px; text-align: center; }
+.ruta-app body#raAppTheme.ra-theme-v2 :is(.risk-partials dt,.risk-course-target > span,.risk-imported) { color: var(--route-muted) !important; font-size: 10px; }
+.risk-partials dd { font-size: 12px; font-weight: 710; margin: 2px 0 0; }
+.risk-imported { display: flex; align-items: center; gap: 6px; }
+.risk-imported .ic { width: 16px; height: 16px; flex: none; }
+.risk-course-target { padding-left: 11px; border-left: 1px solid var(--ra-border); }
+.risk-course-target > strong { display: block; font-size: 21px; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.risk-course-target > strong small { margin-left: 2px; font-size: 10px; font-weight: 500; }
+.risk-course-target > .risk-text-value { font-size: 13px; line-height: 1.38; }
+.risk-course-target > p { margin-top: 3px; }
+.risk-course-link { min-height: 37px; white-space: nowrap; }
+.risk-course-link .ic { width: 15px; height: 15px; }
+.risk-empty,.risk-guide { padding: 11px 13px; border: 1px solid var(--ra-border); border-radius: 10px; background: var(--ra-card); }
+.risk-guide summary { display: flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 700; cursor: pointer; list-style: none; }
+.risk-guide summary::-webkit-details-marker { display: none; }
+.risk-guide summary .ic { width: 15px; height: 15px; flex: none; }
+.risk-guide summary .ic:last-child { margin-left: auto; }
+.risk-guide[open] summary .ic:last-child { transform: rotate(90deg); }
+.risk-guide p { font-size: 12px; line-height: 1.5; margin-top: 5px; }
+@media (max-width: 1160px) {
+  .risk-course { grid-template-columns: minmax(0,1.2fr) minmax(105px,.7fr) minmax(0,1fr); }
+  .risk-course-link { grid-column: 3; justify-self: end; }
+}
+@media (max-width: 650px) {
+  .risk-stats { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .risk-course { grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
+  .risk-course-name { grid-column: 1 / -1; }
+  .risk-course-link { grid-column: 2; }
+  .risk-results > header label { flex-wrap: wrap; max-width: 100%; }
+}
+@media (max-width: 370px) {
+  .risk-stats { padding-right: 9px; padding-left: 9px; }
+  .risk-stat { padding: 6px; }
+  .risk-stat-icon { width: 25px; height: 25px; }
+}

@@ -1,0 +1,86 @@
+
+/* One palette owns both modes. Readable surfaces support the requested black text. */
+body#raAppTheme.ra-theme-v2,body#raAppTheme.ra-theme-v2 *{color:var(--ra-text)!important;text-shadow:none!important}
+body#raAppTheme.ra-theme-v2{background:var(--ra-page)!important}
+body#raAppTheme.ra-theme-v2 .app,body#raAppTheme.ra-theme-v2 main{background:var(--ra-page)!important}
+body#raAppTheme.ra-theme-v2 svg text{fill:var(--ra-text)!important}
+body#raAppTheme.ra-theme-v2 :is(p,small,label,.nav-label,.uam-wordmark span,.ra-brand-author,#profileSubtitleLabel){opacity:1}
+body#raAppTheme.ra-theme-v2 .view{background:var(--ra-workspace)!important;margin:18px 20px 26px;padding:24px;border:1px solid var(--ra-border);border-radius:26px;min-width:0}
+body#raAppTheme.ra-theme-v2 :is(.topbar,.mobile-dock,.panel,.sem,.course,.kpi,.slot,.req-node,.req-focus-card,.study-shell,.ra-card,.empty,.honors-panel,.uam-catalog,.catalog-card,.history-panel,.ra-hub-summary article,.schedule-desktop,.schedule-mobile,.customizer-panel,.customizer-section,.profile-preview-card,.detail-grade-box,.detail-grid>div,.ra-tool-head,.grade-semester,.grade-semester-head,.table-wrap,.study-goal,.study-row,.study-card,.dash-mini,.student-kpi,.req-row,.eq,.modal-card,.schedule-panel,.schedule-toolbar,.schedule-day-events,.schedule-day-empty,.gs-result,.grad-card,.impact-card,.history-import-card,.ra-progress-card){background:var(--ra-card)!important;border-color:var(--ra-border)!important}
+body#raAppTheme.ra-theme-v2 .topbar{box-shadow:0 3px 22px #00000008!important}
+body#raAppTheme.ra-theme-v2 .sidebar{background:var(--ra-sidebar)!important;border-color:var(--ra-border)!important}
+body#raAppTheme.ra-theme-v2 :is(.sidebar-profile,.side-card){background:var(--ra-sidebar-card)!important;border:1px solid var(--ra-border)!important;box-shadow:0 8px 24px #0000000b!important}
+body#raAppTheme.ra-theme-v2 :is(.sidebar-collapse-toggle,.customizer-close,.menu-btn){background:var(--ra-sidebar-card)!important;border-color:var(--ra-border)!important}
+body#raAppTheme.ra-theme-v2 .nav button{background:transparent!important;box-shadow:none!important}
+body#raAppTheme.ra-theme-v2 .nav button:hover{background:var(--ra-side-active)!important}
+body#raAppTheme.ra-theme-v2 .nav button.on{background:var(--ra-side-active)!important;border:1px solid var(--ra-border)!important;box-shadow:0 4px 14px #00000009!important}
+body#raAppTheme.ra-theme-v2 .nav button.on:before{background:var(--route-legacy-strong, var(--ra-text))!important}
+body#raAppTheme.ra-theme-v2 :is(.curriculum-hero,.dashboard-hero,.home-hero,.schedule-intro,.grad-hero,.panel.highlight,.panel.combined,.kpi.dark,.study-hero,.uam-hero,.honors-hero,.req-map-panel,.ra-progress-overview){background:var(--ra-progress)!important;background-image:none!important;border-color:var(--ra-border)!important}
+body#raAppTheme.ra-theme-v2 :is(.curriculum-metrics article,.hero-stat,.hero-kpis>div,.top-stats>div,.ra-overview-metrics>article){background:var(--ra-soft)!important;border-color:var(--ra-border)!important}
+body#raAppTheme.ra-theme-v2 :is(.btn,.customizer-mini-btn,.icon-btn,.filter,.credit-input input,.seg,.ra-seg,.search,.study-pill,.ra-day-corner,.schedule-day-tab,.schedule-day-tabs,.course-studying,.ra-link,.ra-palette-control,.appearance-mode-card,.customizer-tabs,.customizer-tab,.ra-semester-no,.ra-mode-tabs,.sem-check,.check){background:var(--ra-soft)!important;border-color:var(--ra-border)!important}
+body#raAppTheme.ra-theme-v2 :is(.btn.primary,.profile-edit-button,.career-pill,.career-tab.on,.filter.on,.seg button.on,.ra-seg button.on,.customizer-fab,.sem-check.on,.check.on,.ra-mode-tabs button[aria-pressed=true],.schedule-day-tab.on,.mobile-dock button.on){background:var(--ra-accent)!important;border-color:var(--ra-accent)!important}
+body#raAppTheme.ra-theme-v2 .curriculum-course.st-taken{background:var(--ra-approved)!important;border-color:var(--ra-accent)!important}
+body#raAppTheme.ra-theme-v2 .curriculum-course.st-blocked{background:var(--ra-soft)!important;border-style:dashed!important}
+body#raAppTheme.ra-theme-v2 .curriculum-course.st-taken .course-status-rail{background:var(--ra-progress-bar)!important}
+body#raAppTheme.ra-theme-v2 .curriculum-course.st-taken>.check{background:var(--ra-accent)!important}
+body#raAppTheme.ra-theme-v2 .course:not(.st-taken)>.check .ic{opacity:.42}
+body#raAppTheme.ra-theme-v2 :is(.code,.tag,.tag.dark,.badge,.tag-shared,.sem-pill,.course-state-label,.c-grade-pill,.schedule-today-tag,.profile-avatar-fallback,.profile-avatar-edit,.note,.note.dark,.sim-mini,.avg-box,.req-item,.curriculum-tabs,.rec-n,.progress-caption){background:var(--ra-soft)!important;border-color:var(--ra-border)!important}
+body#raAppTheme.ra-theme-v2 :is(.badge.st-taken,.avg-box.passed,.policy-pass){background:var(--ra-approved)!important}
+body#raAppTheme.ra-theme-v2 :is(.badge.st-blocked,.avg-box.failed,.policy-fail){background:var(--ra-alert)!important}
+body#raAppTheme.ra-theme-v2 :is(.badge.st-convocatoria,.avg-box.convocatoria,.policy-call){background:var(--ra-warning)!important}
+body#raAppTheme.ra-theme-v2 :is(.table-wrap th,.grade-table th,thead th){background:var(--ra-soft)!important}
+body#raAppTheme.ra-theme-v2 :is(.table-wrap td,.grade-table td,.rec-row,.req-row,.m-foot,.m-head,.modal-head,.customizer-head){background:var(--ra-card)!important;border-color:var(--ra-border)!important}
+body#raAppTheme.ra-theme-v2 :is(input:not([type=color]):not([type=checkbox]):not([type=radio]),select,textarea){background:var(--ra-card)!important;border-color:var(--ra-border)!important;color-scheme:light}
+body#raAppTheme.ra-theme-v2 input::placeholder,body#raAppTheme.ra-theme-v2 textarea::placeholder{color:var(--ra-text)!important;opacity:.6}
+body#raAppTheme.ra-theme-v2 input[type=checkbox],body#raAppTheme.ra-theme-v2 input[type=radio]{accent-color:var(--ra-progress-bar)}
+body#raAppTheme.ra-theme-v2 :is(.bar,.vbar-track,.ra-track,.ra-semester-track,.ra-progress-track){background:var(--ra-track)!important}
+body#raAppTheme.ra-theme-v2 :is(.bar i,.vbar-track i,.ra-track i,.ra-semester-track i,.ra-progress-track i){background:var(--ra-progress-bar)!important;background-image:none!important}
+body#raAppTheme.ra-theme-v2 .ring-bg{stroke:var(--ra-track)!important}
+body#raAppTheme.ra-theme-v2 .ring-fg{stroke:var(--ra-progress-bar)!important}
+body#raAppTheme.ra-theme-v2 :is(.lg.taken,.lg.current,.live-dot,.course-studying.is-current,.profile-avatar-wrap:after){background:var(--ra-accent)!important}
+body#raAppTheme.ra-theme-v2 .toast{background:var(--ra-card)!important;border:1px solid var(--ra-border)!important}
+body#raAppTheme.ra-theme-v2 .sched-card{background:var(--ra-soft)!important;border-color:var(--ra-border)!important;border-left-color:var(--ra-progress-bar)!important}
+body#raAppTheme.ra-theme-v2 .ra-week-board,body#raAppTheme.ra-theme-v2 .ra-day-track,body#raAppTheme.ra-theme-v2 .ra-time-axis{background-color:var(--ra-card)!important}
+body#raAppTheme.ra-theme-v2 .profile-avatar-wrap{border-color:var(--ra-accent)!important}
+body#raAppTheme.ra-theme-v2 :is(.profile-preview-body,.profile-controls-card,.profile-editor-modern){background:var(--ra-card)!important;border-color:var(--ra-border)!important}
+body#raAppTheme.ra-theme-v2 .profile-preview-cover{background:var(--ra-accent)!important;background-image:none!important}
+body#raAppTheme.ra-theme-v2 :is(.profile-chip,.profile-preview-bio,.profile-preview-kicker,.customizer-save-note){background:var(--ra-soft)!important;border-color:var(--ra-border)!important}
+body#raAppTheme.ra-theme-v2 .rec-row:hover{background:var(--ra-soft)!important}
+body#raAppTheme.ra-theme-v2 :focus-visible{outline:3px solid var(--ra-progress-bar)!important;outline-offset:3px}
+.palette-customizer{display:block!important}
+.ra-palette-heading h3{font-size:17px}.ra-palette-heading p,.palette-help,.ra-palette-reading{font-size:12px;line-height:1.6;margin:7px 0 12px}
+.ra-mode-tabs{display:grid;grid-template-columns:1fr 1fr;padding:4px;border:1px solid;border-radius:13px;gap:4px}
+.ra-mode-tabs button{padding:9px;border-radius:9px;font-size:13px;font-weight:750}
+.ra-palette-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.ra-palette-control{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px;border:1px solid;border-radius:12px;min-width:0;font-size:11.5px;font-weight:700}
+.ra-palette-control span{min-width:0}.ra-palette-control output{display:block;font-size:10px;letter-spacing:.04em;font-weight:500;margin-top:4px}
+.ra-palette-control input[type=color]{width:34px;height:34px;flex:none;border:1px solid #0002;border-radius:8px;padding:2px;background:transparent;cursor:pointer}
+.ra-palette-actions{display:flex;flex-wrap:wrap;gap:8px}.ra-palette-actions button{flex:1}
+.rec-controls{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end}.rec-controls .credit-input{min-width:150px}.rec-controls input{width:100%;max-width:180px}
+.ra-rec-careers{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.ra-rec-careers button{padding:10px 16px;border:1px solid var(--ra-border);border-radius:12px;background:var(--ra-card);font-weight:700}.ra-rec-careers button.on{background:var(--ra-accent)!important}
+.ra-recommend-note{padding:13px 16px;border-radius:13px;border:1px solid var(--ra-border);background:var(--ra-soft);margin-bottom:17px;line-height:1.6;font-size:12px}
+.ra-progress-overview{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:25px;padding:30px;border:1px solid;border-radius:26px;margin-bottom:20px;position:relative;overflow:hidden}
+.ra-progress-kicker{display:flex;align-items:center;gap:7px;letter-spacing:.13em;text-transform:uppercase;font-size:10px;font-weight:800;margin-bottom:10px}
+.ra-progress-overview h2{font-size:clamp(25px,3vw,35px);letter-spacing:-.04em;line-height:1.15;margin-bottom:9px}
+.ra-progress-overview p{font-size:13px;line-height:1.65;max-width:560px}
+.ra-progress-overview .ring{align-self:center}
+.ra-progress-overview .btn{margin-top:18px}
+.ra-overview-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin-bottom:23px}
+.ra-overview-metrics article{padding:19px;border:1px solid var(--ra-border);border-radius:18px;display:flex;flex-direction:column;gap:4px}
+.ra-overview-metrics strong{font-size:27px;letter-spacing:-.05em;line-height:1.1}.ra-overview-metrics span{font-size:11.5px}
+.ra-progress-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.ra-progress-card{border:1px solid var(--ra-border);border-radius:24px;overflow:hidden;box-shadow:0 9px 28px #00000007}
+.ra-progress-card-head{display:flex;gap:16px;align-items:center;padding:24px 22px 18px}
+.ra-progress-plan{flex:1;min-width:0}.ra-progress-plan .ra-progress-kicker{margin-bottom:6px}.ra-progress-plan h3{font-size:18px;line-height:1.3;letter-spacing:-.025em;margin-bottom:7px}
+.ra-progress-plan p{font-size:12px}.ra-progress-card .ring{width:90px;height:90px;flex:none}
+.ra-progress-counts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 22px 20px}
+.ra-progress-counts div{padding:12px 8px;background:var(--ra-soft);border:1px solid var(--ra-border);border-radius:12px;text-align:center}
+.ra-progress-counts b{display:block;font-size:20px;letter-spacing:-.03em}.ra-progress-counts span{font-size:10px}
+.ra-semester-heading{display:flex;align-items:center;justify-content:space-between;padding:16px 22px 8px;border-top:1px solid var(--ra-border);font-size:11px;font-weight:750;letter-spacing:.04em}
+.ra-semester-list{padding:0 22px 8px}.ra-semester-row{display:grid;grid-template-columns:39px minmax(0,1fr) 57px;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--ra-border)}
+.ra-semester-row:last-child{border:0}.ra-semester-no{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;font-size:12px;font-weight:800}
+.ra-semester-copy{display:flex;justify-content:space-between;gap:8px;font-size:10px;margin-bottom:7px}.ra-semester-track{height:6px;border-radius:99px;overflow:hidden}.ra-semester-track i{display:block;height:100%;border-radius:99px}
+.ra-semester-count{text-align:right;font-size:12px;font-weight:800}.ra-semester-count small{display:block;font-size:9px;font-weight:500;margin-top:2px}
+.ra-progress-card-foot{padding:15px 22px 21px;display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:11px}
+@media(max-width:1100px){.ra-progress-grid{grid-template-columns:1fr}.ra-overview-metrics{gap:8px}.ra-overview-metrics article{padding:16px 12px}}
+@media(max-width:650px){body#raAppTheme.ra-theme-v2 .view{margin:12px 10px 20px;padding:14px;border-radius:20px}.ra-progress-overview{padding:22px 18px;gap:12px}.ra-progress-overview .ring{width:86px;height:86px}.ra-overview-metrics{grid-template-columns:1fr 1fr}.ra-overview-metrics strong{font-size:25px}.ra-progress-card-head{padding:21px 17px 16px}.ra-progress-counts{margin:0 17px 17px}.ra-semester-heading{padding:15px 17px 8px}.ra-semester-list{padding:0 17px 8px}.ra-progress-card-foot{padding:14px 17px 18px}.ra-progress-plan h3{font-size:17px}.rec-controls{width:100%}.ra-palette-grid{gap:7px}.ra-palette-control{padding:9px;font-size:11px}}

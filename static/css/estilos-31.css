@@ -1,0 +1,153 @@
+
+/* El turquesa exacto de la referencia (#0099A8) ES EL COLOR DOMINANTE. */
+:root{
+  --navy-500:#0099A8!important;
+  --navy-600:#0099A8!important;
+  --ra-accent-exact:#0099A8!important;
+  --profile-accent:#0099A8!important;
+  --sidebar-bg:#0099A8!important;
+  --sidebar-text:#05263d!important;
+  --topbar-bg:#0099A8!important;
+  --btn-primary:#0099A8!important;
+  --table-head:#0099A8!important;
+  --on-table-head:#05263d!important;
+}
+html{color-scheme:light!important}
+body,main{background:var(--route-legacy-soft, #f0f8f9)!important;color:#092b43!important}
+/* Zonas grandes: turquesa pleno, no gradientes azules previos. */
+.sidebar,body .sidebar{
+  background:#0099A8!important;
+  background-image:none!important;
+  color:#05263d!important;
+  border-right:1px solid #007e8b!important;
+}
+.topbar,body .topbar{
+  background:#0099A8!important;
+  background-image:none!important;
+  border-bottom:2px solid #007e8b!important;
+  box-shadow:0 7px 22px rgba(0,93,105,.12)!important;
+}
+.topbar h1,.topbar p,.topbar-kicker,.topbar-kicker span,#viewTitle,#viewSub{
+  color:#05263d!important;
+}
+.topbar-kicker .live-dot{background:#05263d!important;box-shadow:none!important}
+.top-stats>div{background:var(--route-legacy-surface, #f7ffff)!important;border-color:var(--route-legacy-line, #a6d5da)!important;color:#05263d!important}
+.top-stats>div b,.top-stats>div span{color:#05263d!important}
+.global-search-btn{background:var(--route-legacy-surface, #f7ffff)!important;color:#05263d!important;border-color:var(--route-legacy-line, #8fcdd4)!important}
+.global-search-btn .ic{color:#05263d!important}
+.topbar .menu-btn{background:#06314a!important;color:#fff!important}
+/* Navegación con suficiente contraste */
+.sidebar .brand,.sidebar .brand b,.sidebar .brand span,.sidebar .nav-label,
+.sidebar .nav button,.sidebar .nav button .ic,.sidebar .side-actions button{
+  color:#05263d!important;
+}
+.sidebar .brand .logo{background:#06314a!important;color:#ffffff!important;border:1px solid #06314a!important}
+.sidebar .brand .logo .ic{color:#ffffff!important}
+.sidebar .brand-subtitle,.sidebar .brand-kicker,.sidebar .brand-caption,.sidebar .sidebar-tagline,
+.sidebar .brand-small,.sidebar .brand>small{color:#05344d!important}
+.sidebar .nav button{background:transparent!important;border:1px solid transparent!important}
+.sidebar .nav button:hover{background:rgba(4,45,65,.11)!important;border-color:rgba(4,45,65,.15)!important}
+.sidebar .nav button.on{
+  background:#06314a!important;
+  border-color:#06314a!important;
+  color:#fff!important;
+  box-shadow:0 7px 16px rgba(3,44,65,.18)!important;
+}
+.sidebar .nav button.on .ic,.sidebar .nav button.on span,.sidebar .nav button.on b{color:#fff!important}
+.sidebar .nav button.on::before{background:var(--route-legacy-surface, #fff)!important;box-shadow:none!important}
+.sidebar .nav .badge{background:#06314a!important;color:#fff!important;border-color:#06314a!important}
+.sidebar .side-actions button:hover{background:rgba(4,45,65,.1)!important}
+.sidebar .nav-label,.sidebar .brand small{opacity:1!important}
+.sidebar .side-prog small,.sidebar .side-prog-top span,.sidebar .side-prog-top b{color:#05263d!important}
+.sidebar .side-prog .bar.light{background:rgba(5,38,61,.19)!important}
+.sidebar .side-prog .bar.light i{background:#05263d!important}
+.sidebar .sidebar-profile,.sidebar .side-card{border-color:rgba(5,38,61,.25)!important}
+/* El perfil conserva una tarjeta azul marino con letras blancas. */
+.sidebar .profile-card,.sidebar .sidebar-profile,.sidebar .side-card{
+  background:#06314a!important;
+  color:#fff!important;
+  border:1px solid #14536d!important;
+  border-radius:16px!important;
+}
+.sidebar .profile-copy b,.sidebar .profile-copy small,.sidebar .side-card b,
+.sidebar .profile-card b,.sidebar .profile-card small{color:#fff!important}
+.sidebar .profile-avatar-fallback,.sidebar .profile-avatar-edit{
+  background:#0099A8!important;color:#fff!important;border-color:#06314a!important;
+}
+.sidebar .profile-avatar{border-color:#0099A8!important}
+.sidebar .profile-edit-button{
+  background:#0099A8!important;color:#05263d!important;border:1px solid #0099A8!important;
+  font-weight:800!important;
+}
+.sidebar .profile-edit-button span{color:#05263d!important}
+/* Si hay botón de perfil externo al card, mantener también el turquesa */
+.profile-edit-button:not(.sidebar .profile-edit-button){background:#0099A8!important;color:#05263d!important}
+/* Superficies centrales con azul marino, blanco y color exacto. */
+body .hero,body #view .hero{
+  background:linear-gradient(112deg,#052844 0%,#06314a 52%,#0099A8 52%,#0099A8 100%)!important;
+  background-image:linear-gradient(112deg,#052844 0%,#06314a 52%,#0099A8 52%,#0099A8 100%)!important;
+  border:1px solid #007b89!important;
+  box-shadow:0 16px 32px rgba(1,72,82,.13)!important;
+}
+body .hero::before{background:transparent!important}
+body .hero::after{opacity:.14!important}
+.hero .hero-text,.hero h2,.hero h3,.hero p,.hero .eyebrow{color:#fff!important}
+.hero .hero-art{color:#05263d!important}
+.panel.highlight{background:#06314a!important;color:#fff!important}
+.panel.combined{background:#06314a!important;color:#fff!important}
+.panel.highlight h3,.panel.combined h3{color:#fff!important}
+.home-quick-actions button,.quick-action,.slot,.step,.panel:not(.highlight):not(.combined),.kpi:not(.dark){
+  border-color:var(--route-legacy-line, #c1e4e7)!important;
+}
+.home-quick-actions button:hover{background:var(--route-legacy-soft, #e1f8fa)!important;border-color:#0099A8!important}
+.home-quick-actions .ic,.step-ic .ic{color:#0099A8!important}
+.home-quick-actions .quick-icon,.quick-icon,.step-ic{background:var(--route-legacy-soft, #d5f4f6)!important;color:#05263d!important}
+.home-quick-actions .quick-icon .ic,.quick-icon .ic{color:#05263d!important}
+/* Tabla, semestres, cabeceras de sección, progresos */
+.table th,.grade-semester-head,.sched-header,.ra-week-head,.ra-timeboard .ra-week-head{
+  background:#0099A8!important;
+  color:#05263d!important;
+  border-color:#00818f!important;
+}
+.table th *, .grade-semester-head *, .sched-header *, .ra-week-head *{color:#05263d!important}
+.grade-semester-head h3,.grade-semester-head b,.grade-semester-head span{color:#05263d!important}
+.sem-head{border-bottom:2px solid #0099A8!important}
+.sem.complete{border-color:#0099A8!important}
+.curriculum-sem .curriculum-sem-head,.curriculum-semester-header,
+.curriculum-sem .semester-heading,.curriculum-sem-header{
+  background:var(--route-legacy-soft, #e2f7f8)!important;border-bottom:2px solid #0099A8!important;
+}
+.course.st-available,.curriculum-course.st-available{border-left-color:#0099A8!important}
+.bar:not(.light) i,.ra-track i,.vbar-track i{background:#0099A8!important}
+.btn.primary,.seg button.on,.filter.on,.career-pill,.sem-check.on,
+.badge.st-taken,.avg-box.passed,.empty-ic,.slot-num,.drop-ic{
+  background:#0099A8!important;
+  border-color:#0099A8!important;
+  color:#05263d!important;
+}
+.btn.primary .ic,.badge.st-taken .ic{color:#05263d!important}
+.btn.primary:hover,.profile-edit-button:hover{background:#008795!important}
+input[type=checkbox],input[type=radio]{accent-color:#0099A8!important}
+input:focus,select:focus,textarea:focus{outline-color:#0099A8!important}
+/* Modales, perfil y responsive */
+.customizer-head{background:var(--route-legacy-soft, #d8f5f7)!important;border-bottom:2px solid #0099A8!important}
+.customizer-head h2,.customizer-head p{color:#05263d!important}
+.customizer-kicker{color:#007987!important}
+.profile-preview-cover{background:#0099A8!important;background-image:none!important}
+.mobile-dock{background:#0099A8!important;border-top:2px solid #007e8b!important}
+.mobile-dock button,.mobile-dock button .ic{color:#05263d!important}
+.mobile-dock button.on{color:#fff!important;background:#06314a!important}
+.mobile-dock button.on .ic{color:#fff!important}
+@media(max-width:900px){
+  .sidebar{background:#0099A8!important}
+  .topbar{background:#0099A8!important}
+  body .hero,body #view .hero{background:linear-gradient(130deg,#06314a 0%,#073950 62%,#0099A8 62%)!important;background-image:linear-gradient(130deg,#06314a 0%,#073950 62%,#0099A8 62%)!important}
+}
+@media(max-width:600px){
+  body .hero,body #view .hero{background:#06314a!important;background-image:linear-gradient(150deg,#06314a 0%,#06314a 58%,#0099A8 58%,#0099A8 100%)!important;background-size:cover!important}
+  .topbar{padding:12px 16px!important}
+  body .hero .hero-text{margin-top:0!important;background:#06314a!important;padding:22px 18px!important;}
+  body .hero{min-height:0!important}
+  body .hero .hero-dashboard{margin:10px 14px 16px!important}
+  body .hero .hero-text h2{line-height:1.05!important}
+}

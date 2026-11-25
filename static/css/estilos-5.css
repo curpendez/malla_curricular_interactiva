@@ -1,0 +1,50 @@
+
+/* Fix: evita que Flexbox comprima el perfil y lo superponga con la navegación. */
+.sidebar > .brand,
+.sidebar > .profile-card,
+.sidebar > .nav,
+.sidebar > .side-card,
+.sidebar > .side-actions {
+  flex-shrink: 0;
+}
+.profile-card {
+  position: relative;
+  min-height: 68px;
+  height: auto;
+  margin: 0;
+  padding: 10px 11px;
+  overflow: visible;
+}
+.profile-avatar-wrap {
+  width: 46px;
+  min-width: 46px;
+  height: 46px;
+  min-height: 46px;
+  flex: 0 0 46px;
+}
+.profile-avatar,
+.profile-avatar-fallback {
+  width: 46px !important;
+  height: 46px !important;
+  min-width: 46px;
+  min-height: 46px;
+  max-width: 46px;
+  max-height: 46px;
+}
+.profile-avatar-edit {
+  right: -3px;
+  bottom: -3px;
+}
+.nav {
+  flex: 0 0 auto;
+  min-height: max-content;
+}
+.nav-label:first-child {
+  margin-top: 4px;
+}
+@media (max-height: 680px) and (min-width: 901px) {
+  .sidebar { gap: 12px; }
+  .brand { padding-bottom: 9px; }
+  .profile-card { min-height: 64px; padding: 8px 10px; }
+  .nav-label { margin-top: 6px; }
+}

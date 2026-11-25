@@ -1,0 +1,183 @@
+
+/* Obsidian surfaces and restrained accents across the existing app. */
+.ruta-app body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] {
+  --route-elevation: 0 1px 1px #0005, 0 10px 26px #0003;
+  --route-lift: 0 7px 24px #0006;
+  --route-hero-border: color-mix(in srgb,var(--ra-border) 78%,var(--route-highlight));
+}
+.ruta-app body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] :is(.topbar,.sidebar,.mobile-dock) {
+  background: var(--ra-sidebar) !important;
+  border-color: var(--ra-border) !important;
+}
+.ruta-app body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] :is(.topbar,.sidebar) {
+  box-shadow: inset 0 1px 0 color-mix(in srgb,var(--ra-border) 25%,transparent) !important;
+}
+.ruta-app body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] :is(.ra-home-hero,.curriculum-hero,.schedule-intro,.ra-progress-overview,.ra-cycle-intro) {
+  background: linear-gradient(125deg,var(--ra-home),var(--ra-card) 70%) !important;
+  border-color: var(--route-hero-border) !important;
+}
+.ruta-app body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] .ra-home-hero::before {
+  background: radial-gradient(ellipse at 75% -25%,color-mix(in srgb,var(--route-highlight) 14%,transparent),transparent 65%);
+}
+.ruta-app body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] :is(
+  .panel,.ra-progress-card,.ra-cycle-group,.curriculum-sem,.grade-semester,.req-node,
+  .schedule-panel,.study-focus,.study-session-setup,.uam-catalog-card,.slot,.modal-card,.customizer-panel
+) {
+  background-color: var(--ra-card) !important;
+  border-color: var(--ra-border) !important;
+}
+.ruta-app body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] :is(.topbar .global-search-btn,.route-theme-toggle,.sidebar-profile,.side-card,.drop,.ra-cycle-option,.grade-career-tab) {
+  background: var(--route-control) !important;
+}
+.ruta-app body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] :is(
+  .nav button[aria-current="page"],.route-theme-toggle[aria-pressed="true"],
+  .mobile-dock button[aria-current="page"],.ra-cycle-option.is-selected,
+  .grade-career-tab.is-active,.curriculum-filters .filter.on
+) {
+  background: var(--route-selected) !important;
+  border-color: var(--route-hero-border) !important;
+}
+.ruta-app body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] :is(
+  .curriculum-sem-head,.ra-cycle-group>header,.req-map-sem-head,.ra-week-head,.grade-semester-head,.m-head,.m-foot,.customizer-head
+) {
+  background: var(--route-raised) !important;
+  border-color: var(--ra-border) !important;
+}
+.ruta-app body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] :is(
+  .ra-home-summary-link,.grad-home-link,.route-recommend-selection button
+) { color: var(--route-highlight) !important; }
+.ruta-app body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] :is(.ra-day-track.is-today,.schedule-day-tab.is-today) {
+  background-color: var(--route-selected) !important;
+}
+.ruta-app body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] ::selection {
+  color: var(--ra-text);
+  background: var(--route-selected);
+}
+.ruta-app .grad-home-link { margin-top: 9px; display: inline-flex; align-items: center; gap: 7px; font-size: 13px; font-weight: 700; min-height: 35px; }
+.ruta-app body#raAppTheme.ra-theme-v2 .grad-home-link :is(svg,span) { color: var(--route-highlight) !important; }
+.ruta-app .grad-home-link:hover span { text-decoration: underline; text-underline-offset: 4px; }
+.ruta-app .grad-home-link .ic { width: 17px; height: 17px; }
+.ruta-app body#raAppTheme.ra-theme-v2 .grad-dashboard {
+  --grad-uam-taken: #007a83;
+  --grad-uam-current: #15568e;
+  --grad-uam-available: #53cdd0;
+  --grad-uam-blocked: #9bafbc;
+  display: grid;
+  gap: 16px;
+  min-width: 0;
+}
+.ruta-app body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] .grad-dashboard {
+  --grad-uam-taken: #1496a1;
+  --grad-uam-current: #548cc1;
+  --grad-uam-available: #5ad4d2;
+  --grad-uam-blocked: #7e96a8;
+}
+.grad-dashboard .is-taken { --grad-status: var(--grad-uam-taken); }
+.grad-dashboard .is-current { --grad-status: var(--grad-uam-current); }
+.grad-dashboard .is-available { --grad-status: var(--grad-uam-available); }
+.grad-dashboard .is-blocked { --grad-status: var(--grad-uam-blocked); }
+.grad-dashboard-plan { min-width: 0; }
+.grad-dashboard-plan .seg { flex-wrap: wrap; max-width: 100%; }
+.grad-dashboard-plan .seg button { white-space: normal; }
+.ruta-app body#raAppTheme.ra-theme-v2 .grad-dashboard-overview {
+  display: grid;
+  grid-template-columns: minmax(0, .82fr) minmax(265px, 1.18fr);
+  overflow: hidden;
+  border: 1px solid var(--ra-border);
+  border-radius: 18px;
+  background: var(--ra-card);
+  box-shadow: var(--route-elevation);
+}
+.ruta-app body#raAppTheme.ra-theme-v2 .grad-dashboard-total {
+  padding: clamp(19px,3vw,34px);
+  background: linear-gradient(140deg,var(--uam-deep,#031934),var(--uam-ink,#0d2b59));
+}
+.ruta-app body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] .grad-dashboard-total {
+  background: linear-gradient(140deg,#061b32,#0a2b48);
+}
+.ruta-app body#raAppTheme.ra-theme-v2 .grad-dashboard-total :is(h2,strong,b) { color: #f5fcff !important; }
+.ruta-app body#raAppTheme.ra-theme-v2 .grad-dashboard-total :is(p,span,small) { color: #c8e6ed !important; }
+.grad-dashboard-total h2 { font-size: clamp(16px,1.9vw,23px); font-weight: 690; line-height: 1.3; }
+.ruta-app body#raAppTheme.ra-theme-v2 .grad-dashboard-total > strong {
+  display: block;
+  margin: 5px 0 1px;
+  color: #89e5e6 !important;
+  font-size: clamp(47px,6.5vw,86px);
+  line-height: .98;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.065em;
+}
+.grad-dashboard-total > p { font-size: 13px; }
+.grad-dashboard-credits { margin-top: 18px; padding-top: 12px; border-top: 1px solid #ffffff36; }
+.grad-dashboard-credits > b { font-size: 21px; font-variant-numeric: tabular-nums; margin-right: 7px; }
+.grad-dashboard-credits > span { font-size: 12px; }
+.grad-dashboard-credits > small { display: block; margin-top: 3px; font-size: 11px; }
+.grad-dashboard-distribution { display: grid; grid-template-columns: minmax(105px, .8fr) minmax(105px, 1fr); gap: clamp(11px,2vw,24px); align-items: center; padding: clamp(17px,2.4vw,29px); margin: 0; }
+.grad-donut { position: relative; display: grid; place-items: center; width: 100%; max-width: 176px; justify-self: center; aspect-ratio: 1; }
+.grad-donut svg { width: 100%; height: 100%; display: block; }
+.grad-slice { fill: none; stroke: var(--grad-status); stroke-width: 14; }
+.grad-donut > div { position: absolute; inset: 0; display: grid; align-content: center; justify-items: center; }
+.grad-donut strong { font-size: clamp(23px,3vw,43px); line-height: 1; letter-spacing: -.065em; font-variant-numeric: tabular-nums; }
+.ruta-app body#raAppTheme.ra-theme-v2 .grad-donut > div > span { margin-top: 4px; font-size: 11px; color: var(--route-muted) !important; }
+.grad-dashboard-distribution h3,.grad-card-head h3 { font-size: clamp(16px,1.7vw,21px); letter-spacing: -.032em; line-height: 1.22; font-weight: 735; }
+.grad-dashboard-distribution ul { list-style: none; margin: 10px 0 0; padding: 0; }
+.grad-dashboard-distribution li { display: grid; grid-template-columns: 9px minmax(0,1fr) auto; align-items: center; gap: 7px; padding: 5px 0; font-size: 12px; }
+.grad-dashboard-distribution li + li { border-top: 1px solid var(--ra-border); }
+.grad-dashboard-distribution li > b { font-variant-numeric: tabular-nums; }
+.grad-swatch { display: block; width: 8px; height: 8px; border-radius: 3px; background: var(--grad-status); }
+.grad-dashboard-columns { display: grid; grid-template-columns: minmax(0,1.16fr) minmax(0,1fr); gap: 16px; align-items: start; }
+.ruta-app body#raAppTheme.ra-theme-v2 .grad-dashboard .grad-card {
+  min-width: 0;
+  border: 1px solid var(--ra-border);
+  border-radius: 16px;
+  padding: clamp(14px, 2vw, 22px);
+  margin: 0;
+  background: var(--ra-card) !important;
+  box-shadow: var(--route-elevation);
+}
+.grad-card-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 9px; margin-bottom: 13px; }
+.ruta-app body#raAppTheme.ra-theme-v2 .grad-card-head > span { font-size: 11px; color: var(--route-muted) !important; }
+.grad-card p { font-size: 12px; line-height: 1.55; margin: 0 0 10px; }
+.grad-card p:last-child { margin-bottom: 0; }
+.grad-sem-bars,.grad-blockers { list-style: none; padding: 0; margin: 0; }
+.grad-sem-row { display: grid; grid-template-columns: minmax(48px, auto) minmax(25px, 1fr) minmax(43px,auto); align-items: center; gap: 9px; padding: 8px 0; font-size: 12px; }
+.grad-sem-row + .grad-sem-row { border-top: 1px solid var(--ra-border); }
+.grad-sem-row > span { text-align: right; font-variant-numeric: tabular-nums; }
+.grad-chart-track { height: 12px; display: flex; border-radius: 3px; overflow: hidden; }
+.grad-bar-fill { display: block; flex: none; height: 100%; background: var(--grad-status); }
+.grad-blockers { max-height: 330px; overflow-y: auto; }
+.grad-blockers li + li { border-top: 1px solid var(--ra-border); }
+.grad-blockers li > :is(button,div), .grad-detail > ul > li > button {
+  display: flex; justify-content: space-between; align-items: center; gap: 8px; width: 100%; min-height: 41px; padding: 7px 8px; text-align: left; border-radius: 7px;
+}
+.grad-blockers button:hover, .grad-detail button:hover { background: var(--route-selected); }
+.grad-blockers li b, .grad-detail li b { display: block; font-size: 12.5px; overflow-wrap: anywhere; }
+.grad-blockers li small, .grad-detail li small { display: block; font-size: 10.5px; line-height: 1.3; }
+.ruta-app body#raAppTheme.ra-theme-v2 .grad-blockers li strong {
+  flex: none;
+  color: var(--route-highlight) !important;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+.grad-detail { border: 1px solid var(--ra-border); border-radius: 10px; background: var(--route-control); }
+.grad-detail + .grad-detail, .grad-empty-note + .grad-detail { margin-top: 7px; }
+.grad-detail > summary { cursor: pointer; display: flex; align-items: center; gap: 8px; list-style: none; padding: 9px 10px; min-height: 43px; font-size: 13px; font-weight: 660; }
+.grad-detail > summary::-webkit-details-marker { display: none; }
+.grad-detail > summary > span { flex: 1; }
+.grad-detail > summary > b { font-variant-numeric: tabular-nums; }
+.grad-detail > summary > .ic, .grad-detail button > .ic { flex: none; width: 15px; height: 15px; }
+.grad-detail[open] > summary > .ic { transform: rotate(90deg); }
+.grad-detail > ul { list-style: none; margin: 0; padding: 0 7px 7px; }
+.grad-detail > ul > li { border-top: 1px solid var(--ra-border); }
+.grad-course-conditions { list-style: disc; display: grid; gap: 3px; padding: 0 12px 8px 25px; margin: 0; font-size: 11px; }
+.grad-dashboard-scope { font-size: 11px; line-height: 1.45; margin: 0; }
+@media (max-width: 1020px) {
+  .grad-dashboard-columns { grid-template-columns: minmax(0,1fr); }
+}
+@media (max-width: 650px) {
+  .ruta-app body#raAppTheme.ra-theme-v2 .grad-dashboard-overview { grid-template-columns: minmax(0,1fr); }
+  .grad-dashboard-distribution { max-width: 560px; width: 100%; justify-self: center; }
+}
+@media (max-width: 360px) {
+  .grad-dashboard-distribution { padding: 13px; gap: 8px; }
+}

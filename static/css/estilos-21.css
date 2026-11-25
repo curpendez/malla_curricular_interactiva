@@ -1,0 +1,7 @@
+
+.curriculum-course .course-metadata{display:flex;align-items:center;flex-wrap:wrap;gap:7px 10px;margin-top:2px}
+.curriculum-course .course-metadata .cr{display:inline-flex;align-items:center;flex:none;margin:0!important;border-radius:8px!important;padding:5px 8px!important;background:rgba(75,122,185,.12);font-size:11.5px!important;font-weight:750!important}
+.curriculum-course .course-metadata .c-req{display:flex;align-items:center;gap:5px;flex-wrap:wrap;min-width:0;margin:0!important}
+.curriculum-course .course-metadata .req-label,.curriculum-course .course-metadata .none{font-size:11.5px!important}
+body.dark-theme-active .curriculum-course .course-metadata .cr{background:#244260!important;color:#e8f3ff!important;border:1px solid #406080!important}
+body.dark-theme-active .curriculum-course.st-taken .course-metadata .cr{background:rgba(255,255,255,.14)!important;border:1px solid rgba(255,255,255,.22)!important;color:#fff!important}

@@ -1,0 +1,426 @@
+
+/* Interfaz de Ruta Académica. Los colores proceden del editor de apariencia. */
+body#raAppTheme.ra-theme-v2 {
+  --route-shadow: 0 3px 6px #15363b06, 0 12px 30px #15363b08;
+  --route-hover: 0 7px 24px #15363b12;
+  --route-radius: 18px;
+  --route-inset: clamp(20px, 3.1vw, 52px);
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", system-ui, sans-serif !important;
+  font-size: 14px;
+}
+body#raAppTheme.ra-theme-v2[data-ra-mode=dark] {
+  --route-shadow: 0 3px 6px #0003, 0 12px 28px #0002;
+  --route-hover: 0 7px 24px #0005;
+}
+body#raAppTheme.ra-theme-v2 :is(p, small, .nav-label, .route-wordmark small, .route-credit, .topbar-kicker *, .slot-file *, .c-req .none, .ra-home-mini-grid span, .ra-progress-counts span, .uam-catalog-facts span) {
+  color: var(--route-muted) !important;
+}
+body#raAppTheme.ra-theme-v2 :is(.btn,.btn *, .rec-row *, .career-pill *, .nav button *, .route-theme-toggle *) {
+  opacity: 1;
+}
+body#raAppTheme.ra-theme-v2 :is(.btn.primary, .btn.ra-home-primary, .uam-catalog-load, .appearance-mode-card input:checked) {
+  background: var(--route-solid) !important;
+  border-color: var(--route-solid) !important;
+  box-shadow: none !important;
+}
+body#raAppTheme.ra-theme-v2 :is(.btn.primary, .btn.ra-home-primary, .uam-catalog-load),
+body#raAppTheme.ra-theme-v2 :is(.btn.primary, .btn.ra-home-primary, .uam-catalog-load) * {
+  color: var(--route-on-solid) !important;
+}
+body#raAppTheme.ra-theme-v2 .btn.primary:hover,
+body#raAppTheme.ra-theme-v2 .uam-catalog-load:hover { filter: brightness(1.10); }
+body#raAppTheme.ra-theme-v2 .btn.ghost:hover { border-color: var(--route-highlight) !important; }
+body#raAppTheme.ra-theme-v2 :is(.panel, .empty, .slot, .uam-catalog, .uam-catalog-card, .ra-progress-card, .ra-cycle-group, .curriculum-metrics article, .ra-overview-metrics article, .grade-semester, .schedule-panel) {
+  box-shadow: var(--route-shadow) !important;
+  border-color: var(--ra-border) !important;
+  border-radius: var(--route-radius) !important;
+}
+body#raAppTheme.ra-theme-v2 :is(.panel-head h3,.section-heading h3,.uam-catalog-heading h3) {
+  font-size: clamp(19px, 1.8vw, 24px) !important;
+  font-weight: 730 !important;
+  line-height: 1.25 !important;
+  letter-spacing: -.032em !important;
+}
+body#raAppTheme.ra-theme-v2 .section-heading { margin: 34px 0 16px !important; }
+body#raAppTheme.ra-theme-v2 .section-kicker { color: var(--route-highlight) !important; }
+body#raAppTheme.ra-theme-v2 .view {
+  max-width: 1600px !important;
+  width: auto !important;
+  margin: 0 auto !important;
+  padding: 24px var(--route-inset) 44px !important;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+body#raAppTheme.ra-theme-v2 .topbar {
+  background: var(--ra-card) !important;
+  border-bottom: 1px solid var(--ra-border) !important;
+  box-shadow: none !important;
+  min-height: 99px !important;
+  padding: 17px var(--route-inset) !important;
+  gap: 14px !important;
+}
+body#raAppTheme.ra-theme-v2 .topbar-text { min-width: 0; flex: 1; }
+body#raAppTheme.ra-theme-v2 #viewTitle { font-size: clamp(25px, 2.15vw, 34px) !important; font-weight: 760 !important; }
+body#raAppTheme.ra-theme-v2 #viewSub { font-size: 13px !important; }
+body#raAppTheme.ra-theme-v2 .topbar-actions { display: flex; align-items: center; flex: none; gap: 9px; }
+body#raAppTheme.ra-theme-v2 .topbar-right { min-width: 0 !important; margin: 0 !important; }
+body#raAppTheme.ra-theme-v2 :is(.global-search-btn, .route-theme-toggle, .menu-btn) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 43px !important;
+  height: 43px !important;
+  border: 1px solid var(--ra-border) !important;
+  border-radius: 11px !important;
+  background: var(--ra-soft) !important;
+  box-shadow: none !important;
+  padding: 0 12px !important;
+}
+body#raAppTheme.ra-theme-v2 .global-search-btn { min-width: 124px !important; width: auto !important; }
+body#raAppTheme.ra-theme-v2 .global-search-btn kbd { background: var(--ra-card) !important; border: 1px solid var(--ra-border); }
+body#raAppTheme.ra-theme-v2 :is(.global-search-btn, .route-theme-toggle, .menu-btn):hover { border-color: var(--route-highlight) !important; transform: none !important; }
+body#raAppTheme.ra-theme-v2 .route-theme-toggle { white-space: nowrap; font-size: 12px; font-weight: 720; }
+body#raAppTheme.ra-theme-v2 .route-theme-toggle svg { width: 17px; height: 17px; flex: none; color: var(--route-highlight) !important; }
+.route-theme-toggle .route-sun, [data-ra-mode="dark"] .route-theme-toggle .route-moon { display: none; }
+[data-ra-mode="dark"] .route-theme-toggle .route-sun { display: block; }
+body#raAppTheme.ra-theme-v2[data-ra-mode=dark] :is(input, select, textarea, option) { color-scheme: dark !important; }
+
+body#raAppTheme.ra-theme-v2 .sidebar {
+  background: var(--ra-sidebar) !important;
+  border-right: 1px solid var(--ra-border) !important;
+  box-shadow: none !important;
+  padding: 19px 13px !important;
+  gap: 12px !important;
+  scrollbar-width: thin;
+}
+body#raAppTheme.ra-theme-v2 .sidebar .brand {
+  display: flex !important;
+  align-items: center !important;
+  padding: 4px 42px 10px 5px !important;
+  margin: 0 !important;
+  min-height: 52px !important;
+  background: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+.route-brand { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.route-mark {
+  width: 39px;
+  height: 39px;
+  display: grid;
+  place-items: center;
+  flex: none;
+  border-radius: 12px;
+  background: var(--route-solid);
+}
+body#raAppTheme.ra-theme-v2 .route-mark svg { width: 24px; height: 24px; color: var(--route-on-solid) !important; }
+.route-wordmark { display: grid; min-width: 0; gap: 2px; }
+.route-wordmark strong { font-size: 15px; font-weight: 770; line-height: 1.2; letter-spacing: -.024em; white-space: nowrap; }
+.route-wordmark small { font-size: 10px; line-height: 1.35; white-space: nowrap; }
+.route-credit { font-size: 10px; line-height: 1.5; padding: 4px 7px; }
+body#raAppTheme.ra-theme-v2 .sidebar .sidebar-collapse-toggle {
+  top: 6px !important;
+  right: 1px !important;
+  background: var(--ra-soft) !important;
+  box-shadow: none !important;
+  border: 1px solid var(--ra-border) !important;
+}
+body#raAppTheme.ra-theme-v2 .sidebar .sidebar-profile {
+  padding: 11px !important;
+  margin: 0 !important;
+  border-radius: 14px !important;
+  box-shadow: none !important;
+}
+body#raAppTheme.ra-theme-v2 .sidebar .sidebar-profile-main { padding: 0 !important; gap: 9px !important; }
+body#raAppTheme.ra-theme-v2 .sidebar :is(.profile-avatar-wrap,.profile-avatar,.profile-avatar-fallback) {
+  width: 37px !important; height: 37px !important; min-width: 37px !important; min-height: 37px !important;
+  box-shadow: none !important;
+}
+body#raAppTheme.ra-theme-v2 .sidebar .profile-avatar-edit { display: none !important; }
+body#raAppTheme.ra-theme-v2 .sidebar .profile-copy b { font-size: 13px !important; }
+body#raAppTheme.ra-theme-v2 .sidebar .profile-copy small { font-size: 11px !important; }
+body#raAppTheme.ra-theme-v2 .sidebar .profile-edit-button {
+  min-height: 29px !important;
+  height: 29px !important;
+  margin-top: 9px !important;
+  background: var(--ra-card) !important;
+  border: 1px solid var(--ra-border) !important;
+  box-shadow: none !important;
+  font-size: 11px !important;
+}
+body#raAppTheme.ra-theme-v2 .sidebar .nav-label {
+  margin: 9px 11px 4px !important;
+  padding-top: 6px !important;
+  border: 0 !important;
+  letter-spacing: .075em !important;
+  font-weight: 720 !important;
+}
+body#raAppTheme.ra-theme-v2 .sidebar .nav button {
+  min-height: 39px !important;
+  padding: 8px 10px !important;
+  border: 1px solid transparent !important;
+  border-radius: 9px !important;
+  gap: 9px !important;
+  font-size: 13px !important;
+  font-weight: 580 !important;
+  transform: none !important;
+}
+body#raAppTheme.ra-theme-v2 .sidebar .nav button .ic { width: 17px !important; height: 17px !important; color: var(--route-muted) !important; }
+body#raAppTheme.ra-theme-v2 .sidebar .nav button.on { font-weight: 730 !important; }
+body#raAppTheme.ra-theme-v2 .sidebar .nav button.on:before { background: var(--route-highlight) !important; }
+body#raAppTheme.ra-theme-v2 .sidebar .nav button.on .ic { color: var(--route-highlight) !important; }
+body#raAppTheme.ra-theme-v2 .sidebar .side-card { box-shadow: none !important; padding: 11px !important; }
+body#raAppTheme.ra-theme-v2 .sidebar .side-actions button {
+  background: var(--ra-soft) !important;
+  border: 1px solid var(--ra-border) !important;
+  box-shadow: none !important;
+}
+@media (min-width: 901px) {
+  body#raAppTheme.ra-theme-v2 .menu-btn { display: none !important; }
+  body#raAppTheme.ra-theme-v2.sidebar-collapsed .sidebar .brand { padding: 42px 0 0 !important; justify-content: center !important; }
+  body#raAppTheme.ra-theme-v2.sidebar-collapsed .sidebar .route-wordmark,
+  body#raAppTheme.ra-theme-v2.sidebar-collapsed .sidebar .route-credit { display: none !important; }
+  body#raAppTheme.ra-theme-v2.sidebar-collapsed .sidebar .sidebar-collapse-toggle { top: 0 !important; right: 50% !important; transform: translateX(50%) !important; }
+}
+
+body#raAppTheme.ra-theme-v2 .ra-home-hero {
+  grid-template-columns: minmax(0,1.23fr) minmax(285px,.77fr);
+  min-height: 355px;
+  gap: clamp(20px,4vw,64px);
+  padding: clamp(26px,3.6vw,52px) !important;
+  margin-bottom: 18px;
+  border-radius: 23px !important;
+  box-shadow: var(--route-shadow);
+}
+body#raAppTheme.ra-theme-v2 .ra-home-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 8% 100%, color-mix(in srgb,var(--ra-accent-raw) 17%, transparent), transparent 60%);
+  pointer-events: none;
+}
+body#raAppTheme.ra-theme-v2 .ra-home-copy h2 {
+  font-size: clamp(34px, 3.85vw, 55px) !important;
+  line-height: 1.05 !important;
+  letter-spacing: -.057em !important;
+  font-weight: 780 !important;
+  margin: 0 0 15px !important;
+}
+body#raAppTheme.ra-theme-v2 .ra-home-copy p { font-size: 14px !important; line-height: 1.65 !important; max-width: 420px; }
+body#raAppTheme.ra-theme-v2 .ra-home-footnote { font-size: 11px !important; color: var(--route-muted) !important; margin-top: 16px !important; }
+body#raAppTheme.ra-theme-v2 .ra-home-summary {
+  z-index: 1;
+  box-shadow: var(--route-shadow);
+  padding: 22px !important;
+  border-radius: 17px;
+}
+.ra-home-summary > header { justify-content: space-between !important; }
+.ra-home-percentage { justify-content: space-between !important; margin: 18px 0 12px !important; }
+body#raAppTheme.ra-theme-v2 .ra-home-mini-grid > div { padding: 10px 6px; text-align: center; }
+body#raAppTheme.ra-theme-v2 .ra-home-mini-grid span { font-size: 10px; }
+body#raAppTheme.ra-theme-v2 .ra-home-progress-caption { font-size: 11px; }
+body#raAppTheme.ra-theme-v2 .ra-home-summary-link,
+body#raAppTheme.ra-theme-v2 .ra-home-summary-link .ic { color: var(--route-highlight) !important; font-size: 12px; }
+body#raAppTheme.ra-theme-v2 .home-quick-actions > button {
+  min-height: 79px !important;
+  padding: 12px !important;
+  border-radius: 14px !important;
+  box-shadow: var(--route-shadow) !important;
+}
+body#raAppTheme.ra-theme-v2 .home-quick-actions .hq-icon {
+  width: 38px !important; min-width: 38px !important; height: 38px !important;
+  background: var(--ra-side-active) !important;
+}
+body#raAppTheme.ra-theme-v2 .home-quick-actions .hq-icon :is(svg, svg *) { color: var(--route-highlight) !important; }
+body#raAppTheme.ra-theme-v2 .home-quick-actions > button > svg { flex: none; color: var(--route-highlight) !important; }
+body#raAppTheme.ra-theme-v2 .home-quick-actions > button:hover { box-shadow: var(--route-hover) !important; }
+body#raAppTheme.ra-theme-v2 .uam-catalog-card { background: var(--ra-card) !important; }
+body#raAppTheme.ra-theme-v2 :is(.uam-catalog-year,.uam-catalog-code,.uam-catalog-counter,.uam-catalog-facts span,.uam-year-heading span) { background: var(--ra-soft) !important; border-color: var(--ra-border) !important; }
+
+.route-career-line {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 9px;
+  overflow-wrap: anywhere;
+}
+.route-career-icon {
+  display: inline-grid;
+  flex: none;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--ra-side-active);
+}
+body#raAppTheme.ra-theme-v2 .route-career-icon > .ic { width: 20px !important; height: 20px !important; color: var(--route-highlight) !important; }
+.route-career-icon[data-symbol="globe"], .route-career-icon[data-symbol="cargo"] { border-radius: 50%; }
+.route-career-icon[data-symbol="terminal"], .route-career-icon[data-symbol="database"] { border: 1px solid var(--ra-border); }
+body#raAppTheme.ra-theme-v2 .route-careers button { display: flex !important; justify-content: flex-start; }
+body#raAppTheme.ra-theme-v2 :is(.route-careers button.on,.career-pill,.curriculum-filters .filter.on) {
+  background: var(--ra-side-active) !important;
+  border-color: transparent !important;
+}
+body#raAppTheme.ra-theme-v2 :is(.sidebar,.route-careers,.career-pill) .route-career-icon { width: 26px; height: 26px; border-radius: 7px; }
+body#raAppTheme.ra-theme-v2 :is(.sidebar,.route-careers,.career-pill) .route-career-icon .ic { width: 15px !important; height: 15px !important; }
+body#raAppTheme.ra-theme-v2 .curriculum-hero h2 .route-career-icon { width: 46px; height: 46px; }
+body#raAppTheme.ra-theme-v2 .curriculum-hero h2 .route-career-icon .ic { width: 26px !important; height: 26px !important; }
+body#raAppTheme.ra-theme-v2 .route-recommend-selection { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+body#raAppTheme.ra-theme-v2 .route-recommend-selection button { color: var(--route-highlight) !important; text-decoration: underline; text-underline-offset: 3px; font-weight: 700; min-height: 36px; }
+
+body#raAppTheme.ra-theme-v2 .curriculum-hero { border-radius: 23px !important; box-shadow: var(--route-shadow) !important; }
+body#raAppTheme.ra-theme-v2 .curriculum-hero-copy h2 { font-size: clamp(26px,3vw,41px) !important; font-weight: 760 !important; line-height: 1.13 !important; }
+body#raAppTheme.ra-theme-v2 :is(.curriculum-metrics article,.ra-overview-metrics article) { background: var(--ra-card) !important; }
+body#raAppTheme.ra-theme-v2 :is(.curriculum-metrics .metric-icon,.curriculum-metrics .metric-icon svg) { color: var(--route-highlight) !important; }
+body#raAppTheme.ra-theme-v2 .curriculum-sem {
+  background: var(--ra-card) !important;
+  border: 1px solid var(--ra-border) !important;
+  border-radius: 16px !important;
+  box-shadow: var(--route-shadow) !important;
+}
+body#raAppTheme.ra-theme-v2 .curriculum-sem-head { background: var(--ra-soft) !important; background-image: none !important; }
+body#raAppTheme.ra-theme-v2 .curriculum-sem-head h3 { font-size: 17px !important; font-weight: 760 !important; }
+body#raAppTheme.ra-theme-v2 .semester-primary-action { background: var(--ra-soft) !important; border-color: var(--ra-border) !important; }
+body#raAppTheme.ra-theme-v2 .semester-primary-action.on { background: var(--ra-side-active) !important; }
+body#raAppTheme.ra-theme-v2 .curriculum-course.st-taken,
+body#raAppTheme.ra-theme-v2 .req-node.taken { --course-tone: var(--route-status-approved); }
+body#raAppTheme.ra-theme-v2 .curriculum-course.st-available,
+body#raAppTheme.ra-theme-v2 .req-node.available { --course-tone: var(--route-status-available); }
+body#raAppTheme.ra-theme-v2 .curriculum-course.st-blocked,
+body#raAppTheme.ra-theme-v2 .req-node.blocked { --course-tone: var(--route-status-blocked); }
+body#raAppTheme.ra-theme-v2 :is(.curriculum-course.st-taken,.curriculum-course.st-available,.curriculum-course.st-blocked,.req-node.taken,.req-node.available,.req-node.blocked) {
+  background: color-mix(in srgb,var(--ra-card) 96%,var(--course-tone)) !important;
+  background-image: none !important;
+  border-color: var(--ra-border) !important;
+  box-shadow: none !important;
+}
+body#raAppTheme.ra-theme-v2 .curriculum-course.st-blocked { border-style: dashed !important; }
+body#raAppTheme.ra-theme-v2 .curriculum-course:hover { border-color: var(--course-tone) !important; box-shadow: var(--route-shadow) !important; }
+body#raAppTheme.ra-theme-v2 .curriculum-course :is(.course-status-rail, .check.on) { background: var(--course-tone) !important; }
+body#raAppTheme.ra-theme-v2 .curriculum-course .check { background: var(--ra-card) !important; }
+body#raAppTheme.ra-theme-v2 :is(.curriculum-course .check .ic, .course-state-label, .course-state-label .ic, .req-node .req-node-status) { color: var(--course-tone) !important; }
+body#raAppTheme.ra-theme-v2 :is(.course-state-label,.req-node .req-node-status) {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 4px;
+  background: color-mix(in srgb,var(--ra-card) 90%,var(--course-tone)) !important;
+  border-color: transparent !important;
+  font-size: 10px !important;
+  line-height: 1.2 !important;
+}
+body#raAppTheme.ra-theme-v2 .course-state-label > .ic { width: 12px !important; height: 12px !important; }
+body#raAppTheme.ra-theme-v2 :is(.lg.taken,.req-map-dot.taken) { background: var(--route-status-approved) !important; }
+body#raAppTheme.ra-theme-v2 :is(.lg.available,.req-map-dot.available) { background: var(--route-status-available) !important; }
+body#raAppTheme.ra-theme-v2 :is(.lg.blocked,.req-map-dot.blocked) { background: var(--route-status-blocked) !important; }
+
+body#raAppTheme.ra-theme-v2[data-ra-mode=dark] :is(
+  .global-search-btn kbd,.drop,.slot-stats>div,.sem-progress-badge,.sem-index,.c-req .mini,.c-hint,.unlock-flow,
+  .score-copy,.req-route-chip,.req-map-help-icon,.grad-sem-card,.grad-stat,.grad-course,.impact-row,
+  .profile-preview-cover,.profile-photo-picker,.gs-search,.gs-kbd,.rec-n,.ra-time-axis,.ra-day-track,.ra-normal-day,
+  .ra-day-head,.ra-week-head,.honors-legend,.grade-summary,.grade-policy,.grade-policy-item,.grade-policy-row,
+  .grade-input-wrap,.grade-stats>div,.policy-row,.grade-policy-note,.policy-tip,.schedule-search,.study-day-rail,
+  .detail-action,.detail-chip
+) { background: var(--ra-soft) !important; background-image: none !important; border-color: var(--ra-border) !important; }
+body#raAppTheme.ra-theme-v2[data-ra-mode=dark] :is(.table-wrap tr,.grade-table tbody tr,.table-wrap table,.req-sem-card,.ra-schedule-mobile-day,.profile-preview-body) {
+  background: var(--ra-card) !important;
+  background-image: none !important;
+}
+body#raAppTheme.ra-theme-v2[data-ra-mode=dark] :is(.req-node.map-selected,.ra-cycle-option.is-selected,.schedule-day-tab.on,.mobile-dock button.on,.seg button.on,.btn.ghost.active,.ra-mode-tabs button[aria-pressed=true]) {
+  background: var(--ra-side-active) !important;
+  border-color: var(--route-highlight) !important;
+}
+
+@media (max-width: 1150px) {
+  body#raAppTheme.ra-theme-v2 .global-search-btn { min-width: 44px !important; }
+  body#raAppTheme.ra-theme-v2 .global-search-btn kbd { display: none; }
+}
+@media (max-width: 1020px) {
+  body#raAppTheme.ra-theme-v2 .ra-home-hero { grid-template-columns: minmax(0,1fr); gap: 21px; }
+}
+@media (max-width: 900px) {
+  body#raAppTheme.ra-theme-v2 { --route-inset: clamp(12px,3vw,24px); }
+  body#raAppTheme.ra-theme-v2 .view { padding-top: 17px !important; padding-bottom: max(95px,calc(72px + env(safe-area-inset-bottom))) !important; }
+  body#raAppTheme.ra-theme-v2 .topbar { min-height: 69px !important; gap: 8px !important; }
+  body#raAppTheme.ra-theme-v2 :is(.global-search-btn,.menu-btn) { flex: none; width: 43px !important; padding: 0 !important; min-width: 43px !important; }
+  body#raAppTheme.ra-theme-v2 .sidebar .brand { padding-right: 0 !important; }
+  body#raAppTheme.ra-theme-v2 .sidebar .nav button { min-height: 43px !important; }
+  body#raAppTheme.ra-theme-v2 .mobile-dock { background: var(--ra-card) !important; border-color: var(--ra-border) !important; }
+  body#raAppTheme.ra-theme-v2 .mobile-dock button.on { background: var(--ra-side-active) !important; }
+}
+@media (max-width: 600px) {
+  body#raAppTheme.ra-theme-v2 .topbar { flex-wrap: nowrap !important; align-items: center !important; }
+  body#raAppTheme.ra-theme-v2 .topbar-actions { gap: 5px; }
+  body#raAppTheme.ra-theme-v2 #viewTitle { font-size: clamp(15px,4.15vw,22px) !important; line-height: 1.15 !important; overflow-wrap: anywhere; }
+  body#raAppTheme.ra-theme-v2 .route-theme-toggle { padding: 0 8px !important; font-size: 11px; gap: 4px; }
+  body#raAppTheme.ra-theme-v2 .route-theme-toggle svg { width: 14px; height: 14px; }
+  body#raAppTheme.ra-theme-v2 .ra-home-hero { min-height: 0; padding: 22px 16px !important; border-radius: 18px !important; }
+  body#raAppTheme.ra-theme-v2 .ra-home-copy h2 { font-size: clamp(29px,7.6vw,42px) !important; }
+  .ra-home-copy h2 br { display: none; }
+  body#raAppTheme.ra-theme-v2 .ra-home-summary { padding: 17px !important; }
+  body#raAppTheme.ra-theme-v2 .ra-home-percentage > strong { font-size: 51px; }
+  body#raAppTheme.ra-theme-v2 .home-quick-actions > button { display: grid !important; grid-template-columns: auto minmax(0,1fr); align-content: center; align-items: center !important; min-height: 75px !important; gap: 7px !important; padding: 9px !important; }
+  body#raAppTheme.ra-theme-v2 .home-quick-actions > button > svg { display: none !important; }
+  body#raAppTheme.ra-theme-v2 .home-quick-actions .hq-icon { width: 33px !important; min-width: 33px !important; height: 33px !important; }
+  body#raAppTheme.ra-theme-v2 .ra-cycle-options { grid-template-columns: minmax(0,1fr); }
+  body#raAppTheme.ra-theme-v2 .ra-cycle-option { flex-wrap: nowrap !important; min-height: 60px; }
+  body#raAppTheme.ra-theme-v2 .ra-cycle-option .ra-cycle-icon { display: grid; }
+}
+@media (max-width: 365px) {
+  body#raAppTheme.ra-theme-v2 .route-theme-toggle svg { display: none; }
+  body#raAppTheme.ra-theme-v2 :is(.global-search-btn,.menu-btn) { width: 39px !important; min-width: 39px !important; }
+  body#raAppTheme.ra-theme-v2 .home-quick-actions > button { grid-template-columns: minmax(0,1fr); align-content: start; }
+}
+
+/* Igualar la especificidad de los estilos anteriores del modo oscuro. */
+body#raAppTheme.ra-theme-v2[data-ra-mode=dark] .view {
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+body#raAppTheme.ra-theme-v2[data-ra-mode=dark] .sidebar { box-shadow: none !important; }
+body#raAppTheme.ra-theme-v2[data-ra-mode=dark] :is(.panel,.slot,.sem,.ra-progress-card,.modal-card) { box-shadow: var(--route-shadow) !important; }
+body#raAppTheme.ra-theme-v2 .sidebar .brand { flex-direction: row !important; }
+body#raAppTheme.ra-theme-v2 .sidebar .sidebar-collapse-toggle { position: absolute !important; }
+body#raAppTheme.ra-theme-v2 .side-prog-top .route-career-line { white-space: normal; line-height: 1.25; }
+body#raAppTheme.ra-theme-v2 .side-prog-top .route-career-line > span:last-child {
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; white-space: normal;
+}
+body#raAppTheme.ra-theme-v2 .curriculum-grid { grid-template-columns: repeat(3,minmax(0,1fr)) !important; }
+body#raAppTheme.ra-theme-v2 .curriculum-course.st-taken > .check { background: var(--ra-card) !important; }
+body#raAppTheme.ra-theme-v2 .course-status-rail,
+body#raAppTheme.ra-theme-v2 .curriculum-course.st-taken .course-status-rail,
+body#raAppTheme.ra-theme-v2 .req-node:is(.taken,.available,.blocked)::before { background: var(--course-tone) !important; }
+body#raAppTheme.ra-theme-v2 :is(.global-search-box,.grade-semester-section,.grade-sim-score,.sim-result-card,.config-label,.config-check,.sched-stat,.sched-cell,.sched-time-cell) {
+  background: var(--ra-card) !important;
+  background-image: none !important;
+  border-color: var(--ra-border) !important;
+}
+body#raAppTheme.ra-theme-v2 .req-node.map-selected { border-color: var(--route-highlight) !important; }
+
+@media (max-width: 1340px) {
+  body#raAppTheme.ra-theme-v2 .curriculum-grid { grid-template-columns: repeat(2,minmax(0,1fr)) !important; }
+}
+@media (max-width: 900px) {
+  body#raAppTheme.ra-theme-v2 .curriculum-grid { grid-template-columns: minmax(0,1fr) !important; }
+  body#raAppTheme.ra-theme-v2 .topbar { padding-top: calc(12px + var(--safe-top)) !important; padding-bottom: 12px !important; }
+  body#raAppTheme.ra-theme-v2 .sidebar { padding-top: calc(19px + var(--safe-top)) !important; padding-bottom: calc(19px + var(--safe-bottom)) !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  body#raAppTheme.ra-theme-v2 :is(.route-theme-toggle,.global-search-btn,.curriculum-course,.route-careers button) { transition: none !important; }
+}
+
+body#raAppTheme.ra-theme-v2 .grade-career-zone { border-color: var(--ra-border) !important; border-radius: var(--route-radius) !important; box-shadow: var(--route-shadow) !important; }
+body#raAppTheme.ra-theme-v2 .grade-career-tab.is-active { background: var(--ra-side-active) !important; border-color: var(--route-highlight) !important; box-shadow: none !important; }
+body#raAppTheme.ra-theme-v2[data-ra-mode=dark] :is(
+  .grade-career-lock,.honors-cra-summary,.honors-cra-meta,.honors-tier,
+  .honors-tier .honors-tier-mark,.honors-rank,.honors-current,
+  .honors-meter,.ra-day-track.is-today
+) { background: var(--ra-soft) !important; background-image: none !important; border-color: var(--ra-border) !important; }
+body#raAppTheme.ra-theme-v2 .ra-day-track {
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent calc(var(--ra-hour-height) - 1px), var(--ra-border) calc(var(--ra-hour-height) - 1px), var(--ra-border) var(--ra-hour-height)) !important;
+}
+

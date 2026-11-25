@@ -1,0 +1,46 @@
+
+/* Ajustes finales de contraste en progreso y modal de horario */
+.panel.combined{
+  background:radial-gradient(100% 160% at 100% 0%,#2257b7,transparent 50%),#07101f!important;
+  color:#ffffff!important;
+  border:1px solid #173862!important;
+}
+.panel.combined .prog-info h3,
+.panel.combined .prog-nums b,
+.panel.combined .ring text{color:#ffffff!important;fill:#ffffff!important;}
+.panel.combined .prog-nums span{color:rgba(255,255,255,.74)!important;}
+body.dark-theme-active .panel.combined{
+  background:radial-gradient(100% 170% at 100% 0%,#2c62c7,transparent 50%),#11263d!important;
+  color:#f4f9ff!important;
+  border-color:#355779!important;
+}
+body.dark-theme-active .panel.combined .prog-nums span{color:#cfe0f1!important;}
+
+/* Horario: más colores disponibles */
+.sched-card.color-teal{background:var(--route-legacy-soft, #e2fbf7)!important;color:#0f5d5b!important;border-color:var(--route-legacy-line, #b9ede6)!important;border-left-color:#18b9a7!important}
+.sched-card.color-emerald{background:var(--route-legacy-tint, #e8f8eb)!important;color:#1f6b3a!important;border-color:var(--route-legacy-line, #c9ebd3)!important;border-left-color:#33b45f!important}
+.sched-card.color-violet{background:var(--route-legacy-soft, #f1edff)!important;color:#59449a!important;border-color:var(--route-legacy-line, #ddd4ff)!important;border-left-color:#8b6bff!important}
+.sched-card.color-orange{background:var(--route-legacy-warning, #fff1e6)!important;color:#97521c!important;border-color:var(--route-legacy-line, #ffd9bd)!important;border-left-color:#ff9a3d!important}
+.sched-card.color-rose{background:var(--route-legacy-alert, #ffedf3)!important;color:#9a375f!important;border-color:var(--route-legacy-line, #ffd2df)!important;border-left-color:#ff79a8!important}
+body.dark-theme-active .sched-card.color-teal{background:#124b53!important;color:#efffff!important;border-color:#2a6c73!important;border-left-color:var(--route-legacy-line, #4de7d3)!important}
+body.dark-theme-active .sched-card.color-emerald{background:#1d4d32!important;color:#f3fff7!important;border-color:#2f7045!important;border-left-color:var(--route-legacy-line, #61dd88)!important}
+body.dark-theme-active .sched-card.color-violet{background:#46356d!important;color:#f7f2ff!important;border-color:#5d4a88!important;border-left-color:var(--route-legacy-line, #bea8ff)!important}
+body.dark-theme-active .sched-card.color-orange{background:#623d1f!important;color:#fff8f2!important;border-color:#825732!important;border-left-color:var(--route-legacy-line, #ffbc7a)!important}
+body.dark-theme-active .sched-card.color-rose{background:#6a3651!important;color:#fff6fa!important;border-color:#8a4c6a!important;border-left-color:var(--route-legacy-line, #ffadc9)!important}
+
+/* Bloque compacto para clases cortas: priorizar aula */
+.sched-card .sc-bottom{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:10.5px;opacity:.92}
+.sched-card .sc-bottom .sc-career,
+.sched-card .sc-bottom .sc-room{display:inline-flex;align-items:center;gap:4px;margin:0!important;line-height:1.2}
+.sched-card.compact-short .sc-title{display:-webkit-box!important;-webkit-line-clamp:2!important;-webkit-box-orient:vertical;overflow:hidden}
+.sched-card.compact-short .sc-bottom{font-size:10px!important;gap:6px!important}
+.sched-card.compact-short .sc-bottom .sc-career{display:none!important}
+.ra-day-track .sched-card.on-board.compact-short{padding:8px 9px!important}
+.ra-day-track .sched-card.on-board.compact-short .sc-time{font-size:10.4px!important}
+.ra-day-track .sched-card.on-board.compact-short .sc-title{font-size:11.6px!important;line-height:1.22!important;-webkit-line-clamp:2!important}
+.ra-day-track .sched-card.on-board.compact-short .sc-room{font-size:9.9px!important;font-weight:700!important}
+
+/* Inputs del modal, con contraste más firme para evitar blancos lavados */
+.modal-card select,.modal-card input,.modal-card textarea{background:var(--route-legacy-surface, #ffffff)!important;color:#334b6b!important;border-color:var(--route-legacy-line, #c8d2df)!important}
+.modal-card select:focus,.modal-card input:focus,.modal-card textarea:focus{border-color:#4774c8!important;box-shadow:0 0 0 4px rgba(71,116,200,.16)!important}
+body.dark-theme-active .modal-card select,body.dark-theme-active .modal-card input,body.dark-theme-active .modal-card textarea{background:#14253a!important;color:#eef5ff!important;border-color:#34506c!important}

@@ -1,0 +1,63 @@
+
+/* Fallbacks on older components point to these surfaces only in dark mode.
+   The explicit light values stay with their original declarations. */
+html[data-ra-mode="dark"] {
+  --route-legacy-surface: var(--ra-card, #21252a);
+  --route-legacy-soft: var(--ra-soft, #2b2c30);
+  --route-legacy-tint: var(--ra-side-active, #263b3c);
+  --route-legacy-line: var(--ra-border, #3c3c41);
+  --route-legacy-alert: var(--ra-alert, #3b2b30);
+  --route-legacy-warning: var(--ra-warning, #373127);
+  --route-legacy-strong: var(--ra-side-active, #263b3c);
+  --sidebar-bg: var(--ra-sidebar) !important;
+  --sidebar-text: var(--ra-text) !important;
+  --topbar-bg: var(--ra-card) !important;
+  --btn-primary: var(--route-solid) !important;
+  --table-head: var(--ra-soft) !important;
+  --on-table-head: var(--ra-text) !important;
+  --fab-color: var(--route-solid) !important;
+  --profile-accent: var(--route-highlight) !important;
+  color-scheme: dark;
+  scrollbar-color: var(--ra-border) var(--ra-page);
+}
+body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] :is(
+  .history-upload,.history-preview-table,.schedule-unified-banner,.schedule-career-tab,
+  .ev-current-check,.dgb-avg,.sim-result-card,.sim-mini,.grade-policy-strip,.ra-note-tools,
+  .ra-tool-head,.ra-session,.ra-risk-pill,.drop,.slot-file,.tip,.score-ring,.add-btn,
+  .customizer-panel .customizer-save-note,.modal-card .grade-input,
+  .semester-track,.course-metadata .cr,.filter > span,.score-ring > span
+) {
+  background-color: var(--ra-soft) !important;
+  border-color: var(--ra-border) !important;
+}
+body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] :is(
+  .history-upload,.schedule-unified-banner,.schedule-career-tab,.ra-tool-head,.drop,.ra-risk-pill
+) {
+  background-image: none !important;
+}
+body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] :is(
+  .drop:hover,.schedule-career-tab.on,.schedule-career-tab.is-active,.grade-input:focus,.gs-result:hover,
+  .uam-catalog-slot-choice:hover,.history-preview-table tbody tr:hover > td,.ra-risk-pill.ra-good
+) {
+  background-color: var(--ra-side-active) !important;
+}
+body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] :is(.avg-box.failed,.c-grade-pill.failed,.dgb-avg.failed,.policy-fail,.ra-risk-pill.ra-fail) {
+  background-color: var(--ra-alert) !important;
+}
+body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] :is(.avg-box.convocatoria,.c-grade-pill.convocatoria,.dgb-avg.convocatoria,.policy-call,.ra-risk-pill.ra-call,.ra-risk-pill.ra-improve) {
+  background-color: var(--ra-warning) !important;
+}
+body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] :is(.avg-box.passed,.c-grade-pill.passed,.dgb-avg.passed,.policy-pass) {
+  background-color: var(--ra-approved) !important;
+}
+body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] :is(input,select,textarea,option) {
+  color-scheme: dark;
+  caret-color: var(--route-highlight);
+}
+body#raAppTheme.ra-theme-v2[data-ra-mode="dark"] .route-theme-toggle[aria-pressed="true"] {
+  background: var(--ra-side-active) !important;
+  border-color: var(--route-highlight) !important;
+}
+@media print {
+  html[data-ra-mode="dark"] { color-scheme: light; }
+}

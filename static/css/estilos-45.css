@@ -1,0 +1,27 @@
+
+.ruta-app body#raAppTheme.ra-theme-v2 .course-elective-option {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  margin: 3px 0 4px;
+  font-size: 11px;
+  font-weight: 690;
+}
+.ruta-app body#raAppTheme.ra-theme-v2 .course-elective-option > span { color: var(--route-highlight) !important; }
+.ruta-app body#raAppTheme.ra-theme-v2 .course-elective-option select {
+  width: 100%;
+  max-width: 100%;
+  min-height: 36px;
+  min-width: 0;
+  padding: 5px 8px;
+  border: 1px solid var(--ra-border) !important;
+  border-radius: 8px;
+  background: var(--route-control) !important;
+  font-size: 12px;
+  font-weight: 550;
+}
+.ruta-app .course-elective-option:focus-within select { border-color: var(--route-highlight) !important; }
+.course-detail-elective { margin-bottom: 11px; padding: 10px 12px; border: 1px solid var(--ra-border); border-radius: 10px; background: var(--ra-soft); }
+@media (max-width: 900px) {
+  .ruta-app body#raAppTheme.ra-theme-v2 .course-elective-option select { font-size: 16px !important; min-height: 42px; }
+}

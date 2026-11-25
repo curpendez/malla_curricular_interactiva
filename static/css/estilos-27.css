@@ -1,0 +1,57 @@
+
+/* Segunda revisión visual: conservar fondo oscuro en TODOS los estados del
+   promedio parcial. La regla anterior .avg-box.progress tenía background:#fff
+   y el tema oscuro aplicaba color:#f3f8ff al texto de las tablas. */
+body.dark-theme-active .grade-table td .avg-box.progress,
+body.auto-dark-theme .grade-table td .avg-box.progress {
+  background:#1c4059!important;
+  color:#f2faff!important;
+  border:1px solid #47738f!important;
+  box-shadow:none!important;
+}
+body.dark-theme-active .grade-table td .avg-box.progress b,
+body.dark-theme-active .grade-table td .avg-box.progress small,
+body.auto-dark-theme .grade-table td .avg-box.progress b,
+body.auto-dark-theme .grade-table td .avg-box.progress small {
+  color:#f2faff!important;
+  opacity:1!important;
+}
+/* Notas sin registrar: un fondo de tarjeta oscuro, no blanco. Los estados
+   aprobado, reprobado y convocatoria conservan sus respectivos colores. */
+body.dark-theme-active .grade-table td .avg-box:not(.passed):not(.failed):not(.convocatoria):not(.progress),
+body.auto-dark-theme .grade-table td .avg-box:not(.passed):not(.failed):not(.convocatoria):not(.progress) {
+  background:#1a3047!important;
+  color:#d9e7f4!important;
+  border-color:#2a4663!important;
+}
+body.dark-theme-active .grade-table td .avg-box:not(.passed):not(.failed):not(.convocatoria):not(.progress) b,
+body.auto-dark-theme .grade-table td .avg-box:not(.passed):not(.failed):not(.convocatoria):not(.progress) b {
+  color:#d9e7f4!important;
+}
+/* Comparación de clases compartidas: había tarjetas #f7f9fd y tipografía
+   casi blanca; mantener tonos acordes al resto del modo oscuro. */
+body.dark-theme-active .eq,
+body.auto-dark-theme .eq {
+  background:#1b3148!important;
+  color:#c7d8ec!important;
+  border:1px solid #34516c!important;
+}
+body.dark-theme-active .eq b,
+body.auto-dark-theme .eq b {color:#f2f8ff!important;}
+body.dark-theme-active .eq .code,
+body.auto-dark-theme .eq .code {color:#a9d2ff!important;}
+body.dark-theme-active .eq span,
+body.auto-dark-theme .eq span {color:#c7d8ec!important;}
+/* La línea cian de los títulos es decorativa: no permitir que el modo
+   oscuro vuelva a colorear su texto, que está visualmente oculto. */
+body.dark-theme-active .section-kicker,
+body.auto-dark-theme .section-kicker {color:transparent!important;}
+/* Etiquetas con fondo claro intencional: texto siempre legible. */
+body.dark-theme-active .rec-row .rec-n,
+body.auto-dark-theme .rec-row .rec-n {color:#12283f!important;}
+/* El foco teclado queda claramente visible también en el promedio parcial. */
+body.dark-theme-active .grade-table .grade-input:focus-visible,
+body.auto-dark-theme .grade-table .grade-input:focus-visible {
+  outline:2px solid var(--route-legacy-line, #6ee7f9)!important;
+  outline-offset:2px;
+}

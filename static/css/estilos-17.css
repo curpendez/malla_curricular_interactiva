@@ -1,0 +1,121 @@
+
+/* Capa final de contraste: se activa tanto con tema Negro manual como con modo oscuro automático. */
+body.dark-theme-active{--dark-panel:#111827;--dark-panel-2:#0d1424;--dark-panel-3:#172033;--dark-text:#f7f9fc;--dark-muted:#b7c0d0;--dark-soft:#d6dce8;}
+body.dark-theme-active .panel-head h3,
+body.dark-theme-active .panel-head h4,
+body.dark-theme-active .slot-head,
+body.dark-theme-active .slot-head b,
+body.dark-theme-active .sem-head h3,
+body.dark-theme-active .section-heading,
+body.dark-theme-active .section-heading h2,
+body.dark-theme-active .section-heading h3,
+body.dark-theme-active .agenda-row b,
+body.dark-theme-active .agenda-row strong,
+body.dark-theme-active .study-card h3,
+body.dark-theme-active .study-card h4,
+body.dark-theme-active .study-row-main b,
+body.dark-theme-active .dash-mini-head h4,
+body.dark-theme-active .dash-task-main b,
+body.dark-theme-active .student-kpi b,
+body.dark-theme-active .grade-semester-head h3,
+body.dark-theme-active .grade-semester-head b,
+body.dark-theme-active .grad-sem-card h3,
+body.dark-theme-active .impact-row b,
+body.dark-theme-active .req-focus-main h3,
+body.dark-theme-active .req-map-help b,
+body.dark-theme-active .gs-result b,
+body.dark-theme-active .global-search-box h3,
+body.dark-theme-active .sim-result-card b,
+body.dark-theme-active .detail-grid b,
+body.dark-theme-active .form label,
+body.dark-theme-active .config-label,
+body.dark-theme-active .config-check,
+body.dark-theme-active .sched-stat b,
+body.dark-theme-active .table td,
+body.dark-theme-active .table td .strong,
+body.dark-theme-active .empty h3,
+body.dark-theme-active .profile-copy b,
+body.dark-theme-active .customizer-head h2,
+body.dark-theme-active .customizer-section h3{color:var(--dark-text)!important;}
+body.dark-theme-active .panel-head p,
+body.dark-theme-active .muted-p,
+body.dark-theme-active .slot-file,
+body.dark-theme-active .slot-stats span,
+body.dark-theme-active .sem-head span,
+body.dark-theme-active .agenda-row small,
+body.dark-theme-active .study-row-main small,
+body.dark-theme-active .dash-task-main small,
+body.dark-theme-active .student-kpi span,
+body.dark-theme-active .grad-sem-card small,
+body.dark-theme-active .impact-row small,
+body.dark-theme-active .req-focus-main p,
+body.dark-theme-active .req-map-help span,
+body.dark-theme-active .req-node-status,
+body.dark-theme-active .gs-result small,
+body.dark-theme-active .detail-grid label,
+body.dark-theme-active .sched-stat span,
+body.dark-theme-active .table .strong small,
+body.dark-theme-active .empty p,
+body.dark-theme-active .customizer-head p,
+body.dark-theme-active .profile-fields label span,
+body.dark-theme-active .theme-control-top small,
+body.dark-theme-active .customizer-save-note{color:var(--dark-muted)!important;}
+body.dark-theme-active .student-kpi,
+body.dark-theme-active .dash-mini,
+body.dark-theme-active .study-goal,
+body.dark-theme-active .study-row,
+body.dark-theme-active .quick-tool,
+body.dark-theme-active .agenda-row,
+body.dark-theme-active .grade-semester,
+body.dark-theme-active .grade-semester-head,
+body.dark-theme-active .panel,
+body.dark-theme-active .slot,
+body.dark-theme-active .sem,
+body.dark-theme-active .kpi,
+body.dark-theme-active .empty,
+body.dark-theme-active .modal-card,
+body.dark-theme-active .req-focus-card,
+body.dark-theme-active .req-map-help,
+body.dark-theme-active .req-node,
+body.dark-theme-active .gs-result,
+body.dark-theme-active .global-search-box,
+body.dark-theme-active .sim-mini,
+body.dark-theme-active .grade-sim-score,
+body.dark-theme-active .sim-result-card{background:var(--card-bg)!important;border-color:var(--line)!important;color:var(--ink)!important;}
+body.dark-theme-active .quick-tool,
+body.dark-theme-active .dash-task-date,
+body.dark-theme-active .study-min,
+body.dark-theme-active .chip.pend,
+body.dark-theme-active .mini,
+body.dark-theme-active .sem-pill{background:color-mix(in srgb,var(--card-bg) 80%,var(--navy-800))!important;color:var(--dark-text)!important;border-color:var(--line)!important;}
+body.dark-theme-active .link,
+body.dark-theme-active .c-title-link,
+body.dark-theme-active .req-title-link{color:color-mix(in srgb,var(--navy-300) 82%,#fff)!important;}
+body.dark-theme-active input,
+body.dark-theme-active select,
+body.dark-theme-active textarea,
+body.dark-theme-active .search,
+body.dark-theme-active .grade-input{background:var(--dark-panel-2)!important;color:var(--dark-text)!important;border-color:var(--line)!important;}
+body.dark-theme-active input::placeholder,
+body.dark-theme-active textarea::placeholder{color:#8995a8!important;opacity:1;}
+body.dark-theme-active select option{background:var(--dark-panel-2);color:var(--dark-text);}
+body.dark-theme-active .btn.ghost,
+body.dark-theme-active .btn.light,
+body.dark-theme-active .icon-btn{color:var(--dark-text)!important;}
+body.dark-theme-active .course.st-taken,
+body.dark-theme-active .sched-card{color:#fff!important;}
+body.dark-theme-active .badge.st-taken{color:#fff!important;}
+body.dark-theme-active .course.st-blocked .c-name,
+body.dark-theme-active .course.st-blocked .code,
+body.dark-theme-active .course.st-blocked .c-hint{color:var(--dark-soft)!important;}
+body.dark-theme-active .course.st-available .c-name{color:var(--dark-text)!important;}
+body.dark-theme-active .course.st-available .code{color:#9fc0ff!important;}
+body.dark-theme-active .table tbody tr:hover td{background:color-mix(in srgb,var(--card-bg) 78%,var(--navy-800))!important;}
+body.dark-theme-active .global-search-btn{color:var(--dark-text)!important;}
+body.dark-theme-active .topbar h1{color:var(--dark-text)!important;}
+body.dark-theme-active .topbar p,body.dark-theme-active .topbar-kicker{color:var(--dark-muted)!important;}
+body.dark-theme-active .note:not(.dark){color:var(--dark-text)!important;}
+body.dark-theme-active .note:not(.dark) .ic{color:#9fc0ff!important;}
+body.dark-theme-active .policy-pass{color:#8ce8bd!important;}
+body.dark-theme-active .policy-call{color:#ffd27a!important;}
+body.dark-theme-active .policy-fail{color:#ff9cab!important;}

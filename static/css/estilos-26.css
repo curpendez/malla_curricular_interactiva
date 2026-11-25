@@ -1,0 +1,124 @@
+
+/* Corrección de contraste para superficies y etiquetas en temas oscuros.
+   Solo actúa cuando el selector de apariencia identifica una paleta oscura. */
+body.dark-theme-active .tag.dark,
+body.dark-theme-active .panel .tag.dark,
+body.dark-theme-active .panel.highlight .tag.dark {
+  background:#24485f!important;
+  color:#e9f8ff!important;
+  border:1px solid #426d89!important;
+  box-shadow:none!important;
+}
+body.dark-theme-active .tag:not(.dark),
+body.dark-theme-active .rec-row .tag:not(.dark) {
+  background:#203b54!important;
+  color:#def2ff!important;
+  border:1px solid #3b5c78!important;
+}
+body.dark-theme-active .rec-row .tag .ic,
+body.dark-theme-active .tag.dark .ic { color:inherit!important; stroke:currentColor!important; }
+body.dark-theme-active .rec-row .rec-n {
+  background:var(--route-legacy-soft, #dceeff)!important;
+  color:#12283f!important;
+  border:1px solid var(--route-legacy-line, #aacbe5)!important;
+}
+body.dark-theme-active .rec-row .code { color:#c6e3ff!important; }
+/* Controles y marcadores que antes heredaban --ink (claro en modo oscuro)
+   como color de fondo, pero mantenían texto blanco. */
+body.dark-theme-active .note.dark {
+  background:#1e4158!important;
+  color:#eaf8ff!important;
+  border:1px solid #3c6a81!important;
+}
+body.dark-theme-active .note.dark .ic,
+body.dark-theme-active .note.dark b { color:inherit!important; }
+body.dark-theme-active .tag-shared,
+body.dark-theme-active .req-item .dot {
+  background:#20516b!important;
+  color:#eaffff!important;
+  border:1px solid #3b819a!important;
+}
+body.dark-theme-active .course.st-taken .tag-shared {
+  background:var(--route-legacy-soft, #eaf7ff)!important;
+  color:#16364c!important;
+  border-color:var(--route-legacy-line, #eaf7ff)!important;
+}
+body.dark-theme-active .badge.st-blocked {
+  background:#334356!important;
+  color:#f4f8ff!important;
+  border:1px solid #53677f!important;
+}
+body.dark-theme-active .chip.pend.strong {
+  background:#214b67!important;
+  color:#e8f7ff!important;
+  border-color:#43829d!important;
+}
+body.dark-theme-active .avg-box.failed {
+  background:#562b3c!important;
+  color:#ffe5ec!important;
+  border-color:#8b5363!important;
+}
+body.dark-theme-active .avg-box.failed b,
+body.dark-theme-active .avg-box.failed small { color:#ffe5ec!important; }
+body.dark-theme-active .combined {
+  background:#162c43!important;
+  color:#f3f8ff!important;
+  border:1px solid #34536f!important;
+}
+body.dark-theme-active .combined .prog-nums b { color:#f3f8ff!important; }
+body.dark-theme-active .combined .prog-nums span { color:#c0d2e4!important; }
+body.dark-theme-active .course .c-edit {
+  background:#1b354d!important;
+  color:#f3faff!important;
+  border:1px solid #3a5a77!important;
+}
+body.dark-theme-active .course .c-edit .icon-btn { color:#eaf5ff!important; }
+body.dark-theme-active .course .c-edit .icon-btn:hover { background:#2b506b!important; }
+/* Elementos claros intencionales deben conservar letras oscuras legibles. */
+body.dark-theme-active .check.sm.is-checked,
+body.dark-theme-active .rec-row .check.sm.is-checked {
+  background:#16465d!important;
+  color:#edfbff!important;
+}
+body.dark-theme-active .panel.highlight .rec-row:hover {
+  background:rgba(201,231,255,.12)!important;
+  border-color:#416384!important;
+}
+/* Contraste para las opciones de visualización accesible. */
+body.dark-theme-active .tag:focus-visible,
+body.dark-theme-active .rec-row:focus-visible {
+  outline:2px solid var(--route-legacy-line, #72e8f5)!important;
+  outline-offset:2px;
+}
+/* Hallazgos de la revisión visual en las demás vistas (inicio, malla,
+   graduación y calificaciones). */
+body.dark-theme-active .slot-stats b {
+  color:#eff7ff!important;
+}
+body.dark-theme-active .curriculum-filters .filter > span,
+body.dark-theme-active .filters .filter > span {
+  background:#2b4966!important;
+  color:#e8f5ff!important;
+  border:1px solid #416181!important;
+}
+body.dark-theme-active .curriculum-filters .filter.on > span,
+body.dark-theme-active .filters .filter.on > span {
+  background:rgba(255,255,255,.17)!important;
+  color:#fff!important;
+  border-color:rgba(255,255,255,.25)!important;
+}
+body.dark-theme-active .impact-score {
+  background:#254b62!important;
+  color:#e1f6ff!important;
+  border:1px solid #456d88!important;
+}
+body.dark-theme-active .history-kicker {
+  color:#93eaff!important;
+}
+body.dark-theme-active .grade-table small,
+body.dark-theme-active .grade-table .strong small {
+  color:#cbd9e9!important;
+}
+body.dark-theme-active .history-checkbox small {
+  color:#d0e1f0!important;
+}

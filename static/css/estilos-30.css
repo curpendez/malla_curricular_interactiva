@@ -1,0 +1,75 @@
+
+/* Muestra de color del usuario: RGB (0,153,168), hexadecimal #0099A8.
+   No variantes cercanas para los elementos de identidad de la aplicación. */
+:root {
+  --ra-accent-exact: #0099A8;
+  --profile-accent: #0099A8;
+  --navy-500: #0099A8;
+  --btn-primary: #0099A8;
+  --fab-color: #0099A8;
+}
+/* Azul marino + blanco + turquesa exacto. */
+.sidebar{background:linear-gradient(180deg,#0C1C40 0%,#071631 100%)!important}
+.profile-edit-button,.btn.primary,.career-pill,.seg button.on,
+.sem-check.on,.avg-box.passed,.badge.st-taken,
+.profile-avatar-edit{
+  background:#0099A8!important;
+  border-color:#0099A8!important;
+  color:#fff!important;
+  background-image:none!important;
+}
+.profile-edit-button:hover,.btn.primary:hover{background:#0099A8!important;filter:brightness(.94)}
+.profile-avatar-fallback,.profile-photo-picker>span,.profile-preview-avatar-wrap{
+  background:#0099A8!important;
+  background-image:none!important;
+  color:#fff!important;
+}
+.profile-avatar,.profile-avatar-fallback{border-color:#0099A8!important}
+.nav button.on{border-color:#0099A8!important}
+.nav button.on::before{
+  background:#0099A8!important;
+  box-shadow:0 0 9px rgba(0,153,168,.55)!important;
+}
+.nav button.on .ic{color:#0099A8!important;filter:none!important}
+.live-dot,.appearance-status-dot{background:#0099A8!important}
+.topbar-kicker .live-dot{box-shadow:0 0 0 4px rgba(0,153,168,.14)!important}
+.customizer-section .profile-accent-row,
+.customizer-section .profile-accent-picker,
+.customizer-section:has(.theme-presets),
+.customizer-section:has(.theme-colors){display:none!important}
+/* El usuario no puede cambiar los colores del perfil ni de la interfaz. */
+#profilePreviewCard,#profilePreviewAvatarWrap{--profile-accent:#0099A8!important}
+.profile-chip-accent{border-color:rgba(0,153,168,.5)!important}
+/* Texto claro para tarjetas oscuras, evitando el fallo de contraste de versiones anteriores. */
+.hero h2,.hero .eyebrow,.panel.highlight .panel-head h3,
+.panel.highlight h3,.panel.combined h3{color:#fff!important}
+.hero p,.panel.highlight p,.panel.combined .prog-nums span{color:#dcebf2!important}
+body.dark-theme-active .hero h2,
+body.dark-theme-active .panel.highlight h3,
+body.dark-theme-active .panel.combined h3{color:#fff!important}
+/* Color fijo también en tarjetas de encabezado y controles de progreso */
+.bar:not(.light) i,.ra-track i{
+  background:#0099A8!important;
+  background-image:none!important;
+}
+/* Identidad cromática exacta en acciones, accesos directos y detalles activos */
+.hero .btn.light,.home-quick-actions .hq-icon,
+.drop-ic,.profile-photo-picker-lg>span,
+.section-kicker,.hero-status i{
+  background:#0099A8!important;
+  background-image:none!important;
+  border-color:#0099A8!important;
+}
+.hero .btn.light{color:#052a3c!important}
+.home-quick-actions .hq-icon,.drop-ic,.profile-photo-picker-lg>span{color:#ffffff!important}
+.home-quick-actions button:hover{border-color:#0099A8!important}
+.topbar-kicker,.customizer-kicker,.sidebar .nav button.on .ic,
+.profile-preview-cover::after{--ra-accent-exact:#0099A8}
+.section-kicker{color:transparent!important}
+.global-search-btn:focus-visible,
+.home-quick-actions button:focus-visible,
+.nav button:focus-visible{outline-color:#0099A8!important}
+/* Mantener niveles de accesibilidad sin convertirlo en selector de otra paleta. */
+#appearanceModesSection{display:block!important}
+#appearanceModesSection .appearance-mode-card:has(#themeAutoMode),
+#appearanceModesSection .appearance-status{display:none!important}
